@@ -17,6 +17,15 @@ resource "aws_lambda_function" "lambda" {
   filename         = data.archive_file.zip.output_path
   source_code_hash = data.archive_file.zip.output_base64sha256
   role    = aws_iam_role.lambda-role.arn
-  handler = "hello.lambda_handler"
+  handler = "lambda.hello.lambda_handler"
+  runtime = "python3.8"
+}
+
+resource "aws_lambda_function" "lambda-create-user" {
+  function_name = "create-user"
+  filename         = data.archive_file.zip.output_path
+  source_code_hash = data.archive_file.zip.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "lambda.createUser.lambda_handler"
   runtime = "python3.8"
 }

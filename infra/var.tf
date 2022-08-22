@@ -16,6 +16,6 @@ variable "package" {
 provider "archive" {}
 data "archive_file" "zip" {
   type        = "zip"
-  source_file = "../src/lambda/hello.py"
-  output_path = "../build/hello.zip"
+  source_file = "../src/*"
+  output_path = "../build/publish.zip"
 }

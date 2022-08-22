@@ -1,16 +1,18 @@
 import json
-import boto3
+import sys
+
+sys.path.append('../model')
+from model.User import User
 #function definition
 def lambda_handler(event,context):
-    dynamodb = boto3.resource('dynamodb')
-    #table name
-    table = dynamodb.Table('celer-user')
-    #inserting values into table
-    response = table.put_item(
-       Item={
-            'id': '1',
-            'name':'Test'
-            
-        }
-    )
-    return response
+    #body = event.get('body')
+
+    name = json.loads(body).get('name'),
+    login = json.loads(body).get('login'),
+    password = json.loads(body).get('password'),
+
+    new_user = User(1, name, login, password)
+    return new_user
+
+
+    #return {'statusCode': 200, 'body': new_user}
