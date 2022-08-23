@@ -6,5 +6,5 @@ class User:
         self.name = name
         self.login = login
         self.password = password
-        self.lastLogin = datetime.now()
+        self.lastLogin = datetime.now().isoformat()
         self.active = True

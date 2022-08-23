@@ -1,11 +1,11 @@
 import json
 import sys
 
-sys.path.append('../model')
-from model.User import User
-#function definition
+
+from .. import User
+
 def lambda_handler(event,context):
-    #body = event.get('body')
+    body = event.get('body')
 
     name = json.loads(body).get('name'),
     login = json.loads(body).get('login'),
