@@ -1,18 +1,17 @@
 import json
-import sys
 
-
-from .. import User
+from User import User
+from UserRepository import create
 
 def lambda_handler(event,context):
-    body = event.get('body')
+    
+    body = json.loads(event.get('body'))
+    name = body.get('name')
+    login = body.get('login')
+    password = body.get('password')
 
-    name = json.loads(body).get('name'),
-    login = json.loads(body).get('login'),
-    password = json.loads(body).get('password'),
+    new_user = User(name, login, password)
 
-    new_user = User(1, name, login, password)
-    return new_user
+    output = create(new_user)
 
-
-    #return {'statusCode': 200, 'body': new_user}
+    return {'statusCode': 200, 'body': output}
