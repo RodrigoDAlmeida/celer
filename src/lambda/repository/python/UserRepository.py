@@ -15,3 +15,9 @@ def create(new_user):
         }
     )
     return response
+
+def get(id):
+    response = table.get_item(Key={
+        'id': id
+    })
+    return response.get("Item")

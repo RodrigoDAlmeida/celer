@@ -23,11 +23,18 @@ resource "aws_iam_role_policy" "dynamodb_access" {
   policy = file("policy/dynamodb_policy.json")
 }
 
-resource "aws_lambda_permission" "apigw" {
+resource "aws_lambda_permission" "permission_create_user" {
   statement_id  = "AllowAPIGatewayInvoke"
   action        = "lambda:InvokeFunction"
-  function_name = aws_lambda_function.lambda.function_name
+  function_name = aws_lambda_function.lambda_create_user.function_name
   principal     = "apigateway.amazonaws.com"
   source_arn = "${aws_api_gateway_rest_api.api_gateway.execution_arn}/*/*"
 }
 
+resource "aws_lambda_permission" "permission_get_user" {
+  statement_id  = "AllowAPIGatewayInvoke"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.lambda_get_user.function_name
+  principal     = "apigateway.amazonaws.com"
+  source_arn = "${aws_api_gateway_rest_api.api_gateway.execution_arn}/*/*"
+}
