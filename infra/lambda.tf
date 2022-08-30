@@ -50,3 +50,13 @@ resource "aws_lambda_function" "lambda_list_users" {
   runtime = "python3.8"
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
 }
+
+resource "aws_lambda_function" "lambda_login" {
+  function_name = "celer-login"
+  filename         = data.archive_file.file_lambda_login.output_path
+  source_code_hash = data.archive_file.file_lambda_login.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "login.lambda_handler"
+  runtime = "python3.8"
+  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+}

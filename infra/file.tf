@@ -29,3 +29,9 @@ data "archive_file" "file_lambda_listUsers" {
   source_file     = "../src/lambda/listUsers.py"
   output_path      = "../build/lambdas/listUsers.zip"
 }
+
+data "archive_file" "file_lambda_login" {
+  type             = "zip"
+  source_file     = "../src/lambda/login.py"
+  output_path      = "../build/lambdas/login.zip"
+}

@@ -1,4 +1,3 @@
-import json
 import jsonpickle
 from UserRepository import get
 

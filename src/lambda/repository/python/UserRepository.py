@@ -20,7 +20,21 @@ def get(id):
     response = table.get_item(Key={
         'id': id
     })
-    return response.get("Item")
+    return response.get('Item')
 
 def listAll():
     return table.scan().get('Items')
+
+def login(login, password):
+    user = table.get_item(Key={
+        'login': login
+    }).get('Item')
+
+    if not (user is None):
+        userPassword = user.get('password')
+        if(userPassword == password):
+            return user
+            
+    return None
+
+
