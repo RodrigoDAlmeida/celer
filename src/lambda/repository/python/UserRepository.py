@@ -21,3 +21,6 @@ def get(id):
         'id': id
     })
     return response.get("Item")
+
+def listAll():
+    return table.scan().get('Items')

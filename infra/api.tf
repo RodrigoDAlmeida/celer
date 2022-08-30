@@ -26,6 +26,13 @@ resource "aws_api_gateway_method" "api_method_user" {
   authorization = "NONE"
 }
 
+resource "aws_api_gateway_method" "api_method_user_get" {
+  rest_api_id   = "${aws_api_gateway_rest_api.api_gateway.id}"
+  resource_id   = "${aws_api_gateway_resource.api_proxy_user.id}"
+  http_method   = "GET"
+  authorization = "NONE"
+}
+
 resource "aws_api_gateway_method" "api_method_user_id" {
   rest_api_id   = "${aws_api_gateway_rest_api.api_gateway.id}"
   resource_id   = "${aws_api_gateway_resource.api_proxy_user_id.id}"
@@ -49,31 +56,21 @@ resource "aws_api_gateway_integration" "api_integration_get_user" {
   rest_api_id = "${aws_api_gateway_rest_api.api_gateway.id}"
   resource_id = "${aws_api_gateway_method.api_method_user_id.resource_id}"
   http_method = "${aws_api_gateway_method.api_method_user_id.http_method}"
-  integration_http_method = "GET"
+  integration_http_method = "POST"
   type                    = "AWS_PROXY"
   uri                     = "${aws_lambda_function.lambda_get_user.invoke_arn}"
 }
 
-resource "aws_api_gateway_method_response" "api_integration_get_user_response" {
+resource "aws_api_gateway_integration" "api_integration_list_users" {
   rest_api_id = "${aws_api_gateway_rest_api.api_gateway.id}"
-  resource_id = "${aws_api_gateway_resource.api_proxy_user_id.id}"
-  http_method = "${aws_api_gateway_method.api_method_user_id.http_method}"
-  status_code = "200"
-   response_models = {
-         "application/json" = "Empty"
-    }
+  resource_id = "${aws_api_gateway_method.api_method_user_get.resource_id}"
+  http_method = "${aws_api_gateway_method.api_method_user_get.http_method}"
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = "${aws_lambda_function.lambda_list_users.invoke_arn}"
 }
 
-resource "aws_api_gateway_integration_response" "api_get_user_integration_response" {
-  rest_api_id = "${aws_api_gateway_rest_api.api_gateway.id}"
-  resource_id = "${aws_api_gateway_resource.api_proxy_user_id.id}"
-  http_method = "${aws_api_gateway_method.api_method_user_id.http_method}"
-  status_code = "${aws_api_gateway_method_response.api_integration_get_user_response.status_code}"
 
-   response_templates = {
-       "application/json" = ""
-   } 
-}
 
 
 

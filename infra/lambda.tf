@@ -39,5 +39,14 @@ resource "aws_lambda_function" "lambda_get_user" {
   handler = "getUser.lambda_handler"
   runtime = "python3.8"
   layers = [aws_lambda_layer_version.model_lambda_layer.arn, aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
-  
+}
+
+resource "aws_lambda_function" "lambda_list_users" {
+  function_name = "celer-list-users"
+  filename         = data.archive_file.file_lambda_listUsers.output_path
+  source_code_hash = data.archive_file.file_lambda_listUsers.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "listUsers.lambda_handler"
+  runtime = "python3.8"
+  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
 }
