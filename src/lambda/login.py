@@ -4,12 +4,12 @@ from UserRepository import login
 
 def lambda_handler(event,context):
     body = json.loads(event.get('body'))
-    login = body.get('login')
-    password = body.get('password')
-    user = login(login, password)
+    userLogin = body.get('login')
+    userPassword = body.get('password')
+    user = login(userLogin, userPassword)
     
     statusCode = 200
-    if (item is None):
+    if (user is None):
         statusCode = 401
 
     return {

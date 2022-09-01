@@ -6,15 +6,21 @@ resource "aws_dynamodb_table" "dynamodb_user"{
   name = "celer-user"
   billing_mode = "PAY_PER_REQUEST"
   hash_key = "id"
-  range_key  = "login"
   attribute{
     name = "id"
     type = "S"
   }
-  attribute {
+  attribute{
     name = "login"
     type = "S"
   }
+  global_secondary_index {
+    hash_key           = "login"
+    name               = "login-index" 
+    projection_type    = "ALL"
+  }
 }
+
+
 
 

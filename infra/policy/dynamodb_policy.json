@@ -8,7 +8,9 @@
         "dynamodb:GetItem",
         "dynamodb:PutItem",
         "dynamodb:Scan",
-        "dynamodb:UpdateItem"
+        "dynamodb:UpdateItem",
+        "dynamodb:Query"
+
       ],
       "Resource": "arn:aws:dynamodb:us-east-1:319502219160:table/*"
     }

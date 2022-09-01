@@ -1,4 +1,5 @@
 import boto3
+from boto3.dynamodb.conditions import Key
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('celer-user')
@@ -26,9 +27,8 @@ def listAll():
     return table.scan().get('Items')
 
 def login(login, password):
-    user = table.get_item(Key={
-        'login': login
-    }).get('Item')
+           
+    user = table.query( IndexName='login-index', KeyConditionExpression=Key('login').eq(login)).get("Items")[0]
 
     if not (user is None):
         userPassword = user.get('password')
