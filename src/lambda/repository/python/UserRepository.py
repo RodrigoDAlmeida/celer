@@ -1,18 +1,20 @@
 import boto3
 from boto3.dynamodb.conditions import Key
+from datetime import datetime
+from User import User
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('celer-user')
 
-def create(new_user):
+def create(user):
     response = table.put_item(
        Item={
-            'id': new_user.id,
-            'name': new_user.name,
-            'login': new_user.login,
-            'password': new_user.password,
-            'lastLogin': new_user.lastLogin,
-            'active': new_user.active            
+            'id': user.id,
+            'name': user.name,
+            'login': user.login,
+            'password': user.password,
+            'lastLogin': user.lastLogin,
+            'active': user.active            
         }
     )
     return response
@@ -33,7 +35,9 @@ def login(login, password):
     if not (user is None):
         userPassword = user.get('password')
         if(userPassword == password):
-            return user
+            u = User(**user)
+            create(u)
+            return u
             
     return None
 
