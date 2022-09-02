@@ -21,7 +21,6 @@ resource "aws_lambda_function" "lambda_create_user" {
   handler = "createUser.lambda_handler"
   runtime = var.python_version
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
-  
 }
 
 resource "aws_lambda_function" "lambda_get_user" {
@@ -63,3 +62,15 @@ resource "aws_lambda_function" "lambda_deleteUser" {
   runtime = var.python_version
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
 }
+
+resource "aws_lambda_function" "lambda_update_user" {
+  function_name = "celer-update-user"
+  filename         = data.archive_file.file_lambda_updateUser.output_path
+  source_code_hash = data.archive_file.file_lambda_updateUser.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "updateUser.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+}
+
+

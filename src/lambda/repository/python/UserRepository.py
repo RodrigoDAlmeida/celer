@@ -15,7 +15,7 @@ def create(user):
             'name': user.name,
             'login': user.login,
             'password': user.password,
-            'lastLogin': user.lastLogin,
+            'lastLogin': user.last_login,
             'active': user.active
         }
     )
@@ -39,6 +39,12 @@ def delete(id):
             'id': id
         })
     return response
+
+
+def update(user):
+    if get(user.id) is None:
+        return None
+    return create(user)
 
 
 def login(username, password):

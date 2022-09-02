@@ -8,5 +8,9 @@ class User:
         self.name = name
         self.login = login
         self.password = password
-        self.last_login = datetime.now().isoformat()
         self.active = active
+
+        if last_login is None:
+            self.last_login = datetime.now().isoformat()
+        else:
+            self.last_login = last_login

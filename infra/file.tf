@@ -36,3 +36,9 @@ data "archive_file" "file_lambda_deleteUser" {
   source_file     = "../src/lambda/deleteUser.py"
   output_path      = "../build/lambdas/deleteUser.zip"
 }
+
+data "archive_file" "file_lambda_updateUser" {
+  type             = "zip"
+  source_file     = "../src/lambda/updateUser.py"
+  output_path      = "../build/lambdas/updateUser.zip"
+}
