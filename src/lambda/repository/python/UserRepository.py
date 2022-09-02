@@ -1,3 +1,4 @@
+from urllib import response
 import boto3
 from boto3.dynamodb.conditions import Key
 from datetime import datetime
@@ -27,6 +28,13 @@ def get(id):
 
 def listAll():
     return table.scan().get('Items')
+
+def delete(id):
+    response = table.delete_item(
+        Key={
+            'id':id
+        })
+    return response
 
 def login(login, password):
            

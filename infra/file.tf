@@ -1,9 +1,4 @@
 #Lambda Layers
-data "archive_file" "file_model_lambda_layer" {
-  type             = "zip"
-  source_dir     = "../src/lambda/model/"
-  output_path      = "../build/model_lambda_layer.zip"
-}
 
 data "archive_file" "file_repository_lambda_layer" {
   type             = "zip"
@@ -34,4 +29,10 @@ data "archive_file" "file_lambda_login" {
   type             = "zip"
   source_file     = "../src/lambda/login.py"
   output_path      = "../build/lambdas/login.zip"
+}
+
+data "archive_file" "file_lambda_deleteUser" {
+  type             = "zip"
+  source_file     = "../src/lambda/deleteUser.py"
+  output_path      = "../build/lambdas/deleteUser.zip"
 }

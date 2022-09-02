@@ -52,6 +52,14 @@ resource "aws_api_gateway_method" "api_method_user_id" {
   authorization = "NONE"
 }
 
+resource "aws_api_gateway_method" "api_method_delete_user_id" {
+  rest_api_id   = "${aws_api_gateway_rest_api.api_gateway.id}"
+  resource_id   = "${aws_api_gateway_resource.api_proxy_user_id.id}"
+  http_method   = "DELETE"
+  authorization = "NONE"
+}
+
+
 
 #INTEGRATIONS
 
@@ -89,6 +97,15 @@ resource "aws_api_gateway_integration" "api_integration_login" {
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
   uri                     = "${aws_lambda_function.lambda_login.invoke_arn}"
+}
+
+resource "aws_api_gateway_integration" "api_integration_delete_user" {
+  rest_api_id = "${aws_api_gateway_rest_api.api_gateway.id}"
+  resource_id = "${aws_api_gateway_method.api_method_delete_user_id.resource_id}"
+  http_method = "${aws_api_gateway_method.api_method_delete_user_id.http_method}"
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = "${aws_lambda_function.lambda_deleteUser.invoke_arn}"
 }
 
 

@@ -54,3 +54,11 @@ resource "aws_lambda_permission" "permission_login" {
   principal     = "apigateway.amazonaws.com"
   source_arn = "${aws_api_gateway_rest_api.api_gateway.execution_arn}/*/*"
 }
+
+resource "aws_lambda_permission" "permission_deleteUser" {
+  statement_id  = "AllowAPIGatewayInvoke"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.lambda_deleteUser.function_name
+  principal     = "apigateway.amazonaws.com"
+  source_arn = "${aws_api_gateway_rest_api.api_gateway.execution_arn}/*/*"
+}
