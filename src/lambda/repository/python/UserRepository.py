@@ -7,18 +7,20 @@ from User import User
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('celer-user')
 
+
 def create(user):
     response = table.put_item(
-       Item={
+        Item={
             'id': user.id,
             'name': user.name,
             'login': user.login,
             'password': user.password,
             'lastLogin': user.lastLogin,
-            'active': user.active            
+            'active': user.active
         }
     )
     return response
+
 
 def get(id):
     response = table.get_item(Key={
@@ -26,27 +28,27 @@ def get(id):
     })
     return response.get('Item')
 
-def listAll():
+
+def list_all():
     return table.scan().get('Items')
+
 
 def delete(id):
     response = table.delete_item(
         Key={
-            'id':id
+            'id': id
         })
     return response
 
-def login(login, password):
-           
-    user = table.query( IndexName='login-index', KeyConditionExpression=Key('login').eq(login)).get("Items")[0]
+
+def login(username, password):
+    user = table.query(IndexName='login-index', KeyConditionExpression=Key('login').eq(username)).get("Items")[0]
 
     if not (user is None):
-        userPassword = user.get('password')
-        if(userPassword == password):
+        user_password = user.get('password')
+        if user_password == password:
             u = User(**user)
             create(u)
             return u
-            
+
     return None
-
-
