@@ -3,6 +3,7 @@ resource "aws_lambda_layer_version" "jsonpickle_lambda_layer" {
   filename   = "../dep-layers/jsonpickle.zip"
   layer_name = "jsonpickle"
   compatible_runtimes = [var.python_version]
+  tags = {"App":"celer"}
 }
 
 resource "aws_lambda_layer_version" "repository_lambda_layer" {
@@ -10,6 +11,7 @@ resource "aws_lambda_layer_version" "repository_lambda_layer" {
   source_code_hash = data.archive_file.file_repository_lambda_layer.output_base64sha256
   layer_name = "celer-repository"
   compatible_runtimes = [var.python_version]
+  tags = {"App":"celer"}
 }
 
 #Functions
@@ -21,6 +23,7 @@ resource "aws_lambda_function" "lambda_create_user" {
   handler = "createUser.lambda_handler"
   runtime = var.python_version
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
 }
 
 resource "aws_lambda_function" "lambda_get_user" {
@@ -31,6 +34,7 @@ resource "aws_lambda_function" "lambda_get_user" {
   handler = "getUser.lambda_handler"
   runtime = var.python_version
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
 }
 
 resource "aws_lambda_function" "lambda_list_users" {
@@ -41,6 +45,7 @@ resource "aws_lambda_function" "lambda_list_users" {
   handler = "listUsers.lambda_handler"
   runtime = var.python_version
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
 }
 
 resource "aws_lambda_function" "lambda_login" {
@@ -51,6 +56,7 @@ resource "aws_lambda_function" "lambda_login" {
   handler = "login.lambda_handler"
   runtime = var.python_version
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
 }
 
 resource "aws_lambda_function" "lambda_deleteUser" {
@@ -61,6 +67,7 @@ resource "aws_lambda_function" "lambda_deleteUser" {
   handler = "deleteUser.lambda_handler"
   runtime = var.python_version
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
 }
 
 resource "aws_lambda_function" "lambda_update_user" {
@@ -71,6 +78,7 @@ resource "aws_lambda_function" "lambda_update_user" {
   handler = "updateUser.lambda_handler"
   runtime = var.python_version
   layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
 }
 
 
