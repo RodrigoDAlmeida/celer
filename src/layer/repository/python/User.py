@@ -36,4 +36,4 @@ class User:
     @password.setter
     def password(self, d):
         if not len(d) > 6: raise Exception("password must be at least 6 characters")
-        self._login = d
+        self._password = d
