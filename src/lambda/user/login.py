@@ -9,9 +9,7 @@ def lambda_handler(event, context):
     user_password = body.get('password')
     user = login(user_login, user_password)
 
-    status_code = 200
-    if user is None:
-        status_code = 401
+    status_code = 200 if user is None else 401
 
     return {
         'statusCode': status_code,

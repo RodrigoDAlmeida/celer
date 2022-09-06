@@ -1,7 +1,5 @@
-from urllib import response
 import boto3
 from boto3.dynamodb.conditions import Key
-from datetime import datetime
 from User import User
 
 dynamodb = boto3.resource('dynamodb')

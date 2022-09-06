@@ -15,9 +15,7 @@ def lambda_handler(event, context):
 
     new_user = User(name, login, password, last_login, active, id)
     output = update(new_user)
-    status_code = 200
-    if output is None:
-        status_code = 204
+    status_code = 200 if output is None else 204
 
     return {
         'statusCode': status_code,

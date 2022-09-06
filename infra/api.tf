@@ -1,6 +1,7 @@
 resource "aws_api_gateway_rest_api" "api_gateway" {
   name        = "celer-api"
   description = "API from Celer application"
+  tags = {"App":"celer"}
 }
 
 ##PROXYS
