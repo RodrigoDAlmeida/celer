@@ -7,6 +7,10 @@ table = dynamodb.Table('celer-user')
 
 
 def create(user):
+    if(get_by_login(user.login) is not None):
+        raise Exception("login "+user.login+" is already in use")
+        return None
+    
     response = table.put_item(
         Item={
             'id': user.id,
@@ -45,9 +49,12 @@ def update(user):
     return create(user)
 
 
-def login(username, password):
-    user = table.query(IndexName='login-index', KeyConditionExpression=Key('login').eq(username)).get("Items")[0]
+def get_by_login(login):
+    return table.query(IndexName='login-index', KeyConditionExpression=Key('login').eq(login)).get("Items")[0]
 
+
+def login(username, password):
+    user = get_by_login(username)
     if not (user is None):
         user_password = user.get('password')
         if user_password == password:
