@@ -1,15 +1,15 @@
 import json
 import jsonpickle
-from User import User
-from UserRepository import create
+from Company import User
+from CompanyRepository import create
 
 
 def lambda_handler(event, context):
     body = json.loads(event.get('body'))
     name = body.get('name')
-    login = body.get('login')
-    password = body.get('password')
-    new_user = User(name, login, password)
+    abbreviation = body.get('abbreviation')
+    email = body.get('email')
+    new_user = User(name, abbreviation, email)
     output = create(new_user)
 
     return {

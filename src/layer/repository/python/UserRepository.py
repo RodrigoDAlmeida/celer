@@ -10,7 +10,7 @@ def create(user):
     if(get_by_login(user.login) is not None):
         raise Exception("login "+user.login+" is already in use")
         return None
-    
+
     response = table.put_item(
         Item={
             'id': user.id,
