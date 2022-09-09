@@ -1,7 +1,6 @@
 import json
 import jsonpickle
-from User import User
-from UserRepository import create
+import user_service
 
 
 def lambda_handler(event, context):
@@ -11,12 +10,10 @@ def lambda_handler(event, context):
     password = body.get('password')
 
     try:
-        new_user = User(name, login, password)
-        output = create(new_user).get('ResponseMetadata')
-        status_code = 201 if output.get('HTTPStatusCode') == 200 else int(output.get('HTTPStatusCode'))
+        new_user = user_service.create(name, login, password)
+        status_code = 201 if new_user is not None else 500
     except Exception as e:
         return{'statusCode': 404, 'body': str(e)}
-
 
     return {
         'statusCode': status_code,

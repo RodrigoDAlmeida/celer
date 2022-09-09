@@ -5,10 +5,10 @@ resource "aws_lambda_layer_version" "jsonpickle_lambda_layer" {
   compatible_runtimes = [var.python_version]
 }
 
-resource "aws_lambda_layer_version" "repository_lambda_layer" {
-  filename         = data.archive_file.file_repository_lambda_layer.output_path
-  source_code_hash = data.archive_file.file_repository_lambda_layer.output_base64sha256
-  layer_name = "celer-repository"
+resource "aws_lambda_layer_version" "service_lambda_layer" {
+  filename         = data.archive_file.file_service_lambda_layer.output_path
+  source_code_hash = data.archive_file.file_service_lambda_layer.output_base64sha256
+  layer_name = "celer-service"
   compatible_runtimes = [var.python_version]
 }
 
@@ -18,9 +18,9 @@ resource "aws_lambda_function" "lambda_create_user" {
   filename         = data.archive_file.file_lambda_createUser.output_path
   source_code_hash = data.archive_file.file_lambda_createUser.output_base64sha256
   role    = aws_iam_role.lambda-role.arn
-  handler = "createUser.lambda_handler"
+  handler = "create_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -29,9 +29,9 @@ resource "aws_lambda_function" "lambda_get_user" {
   filename         = data.archive_file.file_lambda_getUser.output_path
   source_code_hash = data.archive_file.file_lambda_getUser.output_base64sha256
   role    = aws_iam_role.lambda-role.arn
-  handler = "getUser.lambda_handler"
+  handler = "get_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -40,9 +40,9 @@ resource "aws_lambda_function" "lambda_list_users" {
   filename         = data.archive_file.file_lambda_listUsers.output_path
   source_code_hash = data.archive_file.file_lambda_listUsers.output_base64sha256
   role    = aws_iam_role.lambda-role.arn
-  handler = "listUsers.lambda_handler"
+  handler = "list_users.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -53,7 +53,7 @@ resource "aws_lambda_function" "lambda_login" {
   role    = aws_iam_role.lambda-role.arn
   handler = "login.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -62,9 +62,9 @@ resource "aws_lambda_function" "lambda_deleteUser" {
   filename         = data.archive_file.file_lambda_deleteUser.output_path
   source_code_hash = data.archive_file.file_lambda_deleteUser.output_base64sha256
   role    = aws_iam_role.lambda-role.arn
-  handler = "deleteUser.lambda_handler"
+  handler = "delete_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -73,9 +73,9 @@ resource "aws_lambda_function" "lambda_update_user" {
   filename         = data.archive_file.file_lambda_updateUser.output_path
   source_code_hash = data.archive_file.file_lambda_updateUser.output_base64sha256
   role    = aws_iam_role.lambda-role.arn
-  handler = "updateUser.lambda_handler"
+  handler = "update_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.repository_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 

@@ -1,6 +1,6 @@
 import boto3
 from boto3.dynamodb.conditions import Key
-from User import User
+from python.model.User import Company
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('celer-company')
