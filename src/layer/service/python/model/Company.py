@@ -1,4 +1,3 @@
-from datetime import datetime
 import uuid
 
 
@@ -15,7 +14,8 @@ class Company:
 
     @name.setter
     def name(self, d):
-        if not d: raise Exception("name cannot be empty")
+        if not d:
+            raise Exception("name cannot be empty")
         self._name = d
 
     @property
@@ -24,5 +24,6 @@ class Company:
 
     @abbreviation.setter
     def abbreviation(self, d):
-        if not d: raise Exception("abbreviation cannot be empty")
+        if not d:
+            raise Exception("abbreviation cannot be empty")
         self._abbreviation = d
