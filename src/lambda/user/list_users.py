@@ -1,11 +1,15 @@
 import jsonpickle
-from UserRepository import listAll
+import user_service
 
 
 def lambda_handler(event, context):
-    items = listAll()
+    try:
+        items = user_service.get_all()
+        status_code = 200 if items is not None else 500
+    except Exception as e:
+        return{'statusCode': 404, 'body': str(e)}
 
     return {
-        'statusCode': 200,
-        'body': jsonpickle.encode(items, unpicklable=False)
-    }
+            'statusCode': status_code,
+            'body': jsonpickle.encode(items, unpicklable=False)
+        }

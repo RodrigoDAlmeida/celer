@@ -9,7 +9,6 @@ table = dynamodb.Table('celer-company')
 def create(company):
     if get_by_login(company.abbreviation) is not None:
         raise Exception("company "+company.abbreviation+" is already in use")
-        return None
 
     response = table.put_item(
         Item={

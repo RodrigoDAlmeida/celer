@@ -6,10 +6,9 @@ dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('celer-user')
 
 
-def create(user):
-    if get_by_login(user.login) is not None:
-        raise Exception("login "+user.login+" is already in use")
-        return None
+def put_item(user):
+    if get_by_login(user.login):
+        raise Exception("login {} is already in use".format(user.login))
 
     response = table.put_item(
         Item={
@@ -31,11 +30,11 @@ def get(id):
     return response.get('Item')
 
 
-def list_all():
+def scan():
     return table.scan().get('Items')
 
 
-def delete(id):
+def delete_item(id):
     response = table.delete_item(
         Key={
             'id': id
@@ -43,14 +42,8 @@ def delete(id):
     return response
 
 
-def update(user):
-    if get(user.id) is None:
-        return None
-    return create(user)
-
-
 def get_by_login(login):
-    return table.query(IndexName='login-index', KeyConditionExpression=Key('login').eq(login)).get("Items")[0]
+    return table.query(IndexName='login-index', KeyConditionExpression=Key('login').eq(login)).get("Items")
 
 
 

@@ -1,12 +1,14 @@
 import jsonpickle
-from UserRepository import get
+import user_service
 
 
 def lambda_handler(event, context):
     id = event.get('pathParameters').get('id')
-    item = get(id)
-
-    status_code = 200 if item is None else 404
+    try:
+        item = user_service.get_by_id(id)
+        status_code = 200 if item is not None else 204
+    except Exception as e:
+        return {'statusCode': 404, 'body': str(e)}
 
     return {
         'statusCode': status_code,

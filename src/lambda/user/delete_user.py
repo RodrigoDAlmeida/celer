@@ -1,16 +1,16 @@
 import jsonpickle
-from UserRepository import delete
+import user_service
 
 
 def lambda_handler(event, context):
-    id = event.get('pathParameters').get('id')
-    response = delete(id)
-
-    status_code = 200
-    if response is None:
-        status_code = 404
+    try:
+        id = event.get('pathParameters').get('id')
+        response = user_service.remove(id)
+        status_code = 200 if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 is not None else 500
+    except Exception as e:
+        return {'statusCode': 404, 'body': str(e)}
 
     return {
         'statusCode': status_code,
-        'body': jsonpickle.encode(response, unpicklable=False)
+        'body': ''
     }

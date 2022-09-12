@@ -1,23 +1,24 @@
 import json
 import jsonpickle
-from User import User
-from UserRepository import update
+from src.layer.service.python import user_service
 
 
 def lambda_handler(event, context):
     body = json.loads(event.get('body'))
-    id = body.get('id')
+    user_id = body.get('id')
     name = body.get('name')
     login = body.get('login')
     password = body.get('password')
     active = body.get('active')
     last_login = body.get('lastLogin')
 
-    new_user = User(name, login, password, last_login, active, id)
-    output = update(new_user)
-    status_code = 200 if output is None else 204
+    try:
+        user = user_service.update(name, login, password, last_login, active, user_id)
+        status_code = 200 if user is not None else 500
+    except Exception as e:
+        return {'statusCode': 404, 'body': str(e)}
 
     return {
         'statusCode': status_code,
-        'body': jsonpickle.encode(output, unpicklable=False)
+        'body': jsonpickle.encode(user, unpicklable=False)
     }
