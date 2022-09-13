@@ -13,7 +13,7 @@ def lambda_handler(event, context):
         new_company = company_service.create(name, abbreviation, email)
         status_code = 201 if new_company is not None else 500
     except Exception as e:
-        return{'statusCode': 404, 'body': str(e)}
+        return{'statusCode': 400, 'body': str(e)}
 
     return {
         'statusCode': status_code,
