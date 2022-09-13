@@ -91,3 +91,14 @@ resource "aws_lambda_function" "lambda_create_company" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+
+resource "aws_lambda_function" "lambda_delete_company" {
+  function_name = "celer-company-delete"
+  filename         = data.archive_file.file_lambda_deleteCompany.output_path
+  source_code_hash = data.archive_file.file_lambda_deleteCompany.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "delete_company.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
+}
