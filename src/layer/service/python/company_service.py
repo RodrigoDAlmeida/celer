@@ -3,13 +3,13 @@ from model.Company import Company
 
 
 def create(name, abbreviation, email):
-    new_user = Company(name, abbreviation, email)
-    company_repository.put_item(new_user)
-    return new_user
+    new_company = Company(name, abbreviation, email)
+    company_repository.put_item(new_company)
+    return new_company
 
 
 def get_by_id(user_id):
-    return company_repository.get(user_id)
+    return company_repository.get_by_id(user_id)
 
 
 def get_by_abbreviation(abbreviation):

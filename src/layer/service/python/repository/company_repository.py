@@ -6,8 +6,8 @@ table = dynamodb.Table('celer-company')
 
 
 def put_item(company):
-    if get_by_abbreviation(company.abbreviation) is not None:
-        raise Exception("company "+company.abbreviation+" is already in use")
+    if get_by_abbreviation(company.abbreviation):
+        raise Exception("abbreviation "+company.abbreviation+" is already in use")
 
     response = table.put_item(
         Item={

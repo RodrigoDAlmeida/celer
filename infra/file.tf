@@ -7,6 +7,7 @@ data "archive_file" "file_service_lambda_layer" {
 }
 
 #Lambdas
+#USER
 data "archive_file" "file_lambda_createUser" {
   type             = "zip"
   source_file     = "../src/lambda/user/create_user.py"
@@ -41,4 +42,12 @@ data "archive_file" "file_lambda_updateUser" {
   type             = "zip"
   source_file     = "../src/lambda/user/update_user.py"
   output_path      = "../build/lambdas/update_user.zip"
+}
+
+#COMPANY
+
+data "archive_file" "file_lambda_createCompany" {
+  type             = "zip"
+  source_file     = "../src/lambda/company/create_company.py"
+  output_path      = "../build/lambdas/create_company.zip"
 }

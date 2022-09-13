@@ -22,6 +22,26 @@ resource "aws_dynamodb_table" "dynamodb_user"{
   }
 }
 
+resource "aws_dynamodb_table" "dynamodb_company"{
+  name = "celer-company"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key = "id"
+  tags = {"App":"celer"}
+  attribute{
+    name = "id"
+    type = "S"
+  }
+  attribute{
+    name = "abbreviation"
+    type = "S"
+  }
+  global_secondary_index {
+    hash_key           = "abbreviation"
+    name               = "abbreviation-index"
+    projection_type    = "ALL"
+  }
+}
+
 
 
 

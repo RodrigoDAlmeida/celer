@@ -13,6 +13,7 @@ resource "aws_lambda_layer_version" "service_lambda_layer" {
 }
 
 #Functions
+#User
 resource "aws_lambda_function" "lambda_create_user" {
   function_name = "celer-user-create"
   filename         = data.archive_file.file_lambda_createUser.output_path
@@ -78,5 +79,15 @@ resource "aws_lambda_function" "lambda_update_user" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+#Company
 
-
+resource "aws_lambda_function" "lambda_create_company" {
+  function_name = "celer-company-create"
+  filename         = data.archive_file.file_lambda_createCompany.output_path
+  source_code_hash = data.archive_file.file_lambda_createCompany.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "create_company.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
+}
