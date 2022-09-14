@@ -97,6 +97,13 @@ resource "aws_api_gateway_method" "api_method_get_company_id" {
   authorization = "NONE"
 }
 
+resource "aws_api_gateway_method" "api_method_get_company" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_company.id
+  http_method   = "GET"
+  authorization = "NONE"
+}
+
 
 #INTEGRATIONS
 
@@ -179,6 +186,15 @@ resource "aws_api_gateway_integration" "api_integration_get_company" {
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
   uri                     = aws_lambda_function.lambda_get_company.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_list_company" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_get_company.resource_id
+  http_method = aws_api_gateway_method.api_method_get_company.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_list_company.invoke_arn
 }
 
 
