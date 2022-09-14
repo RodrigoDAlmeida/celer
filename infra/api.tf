@@ -70,7 +70,7 @@ resource "aws_api_gateway_method" "api_method_delete_user_id" {
   authorization = "NONE"
 }
 
-resource "aws_api_gateway_method" "api_method_update_user" {
+resource "aws_api_gateway_method" "api_method_put_user" {
   rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
   resource_id   = aws_api_gateway_resource.api_proxy_user.id
   http_method   = "PUT"
@@ -87,6 +87,27 @@ resource "aws_api_gateway_method" "api_method_delete_company_id" {
   rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
   resource_id   = aws_api_gateway_resource.api_proxy_company_id.id
   http_method   = "DELETE"
+  authorization = "NONE"
+}
+
+resource "aws_api_gateway_method" "api_method_get_company_id" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_company_id.id
+  http_method   = "GET"
+  authorization = "NONE"
+}
+
+resource "aws_api_gateway_method" "api_method_get_company" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_company.id
+  http_method   = "GET"
+  authorization = "NONE"
+}
+
+resource "aws_api_gateway_method" "api_method_put_company" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_company.id
+  http_method   = "PUT"
   authorization = "NONE"
 }
 
@@ -140,8 +161,8 @@ resource "aws_api_gateway_integration" "api_integration_delete_user" {
 
 resource "aws_api_gateway_integration" "api_integration_update_user" {
   rest_api_id = aws_api_gateway_rest_api.api_gateway.id
-  resource_id = aws_api_gateway_method.api_method_update_user.resource_id
-  http_method = aws_api_gateway_method.api_method_update_user.http_method
+  resource_id = aws_api_gateway_method.api_method_put_user.resource_id
+  http_method = aws_api_gateway_method.api_method_put_user.http_method
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
   uri                     = aws_lambda_function.lambda_update_user.invoke_arn
@@ -163,6 +184,33 @@ resource "aws_api_gateway_integration" "api_integration_delete_company" {
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
   uri                     = aws_lambda_function.lambda_delete_company.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_get_company" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_get_company_id.resource_id
+  http_method = aws_api_gateway_method.api_method_get_company_id.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_get_company.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_list_company" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_get_company.resource_id
+  http_method = aws_api_gateway_method.api_method_get_company.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_list_company.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_update_company" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_put_company.resource_id
+  http_method = aws_api_gateway_method.api_method_put_company.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_update_company.invoke_arn
 }
 
 

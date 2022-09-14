@@ -6,9 +6,6 @@ table = dynamodb.Table('celer-company')
 
 
 def put_item(company):
-    if get_by_abbreviation(company.abbreviation):
-        raise Exception("abbreviation "+company.abbreviation+" is already in use")
-
     response = table.put_item(
         Item={
             'id': company.id,
@@ -20,7 +17,7 @@ def put_item(company):
     return response
 
 
-def get_by_id(id):
+def get(id):
     response = table.get_item(Key={
         'id': id
     })
