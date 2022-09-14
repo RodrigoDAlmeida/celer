@@ -20,7 +20,7 @@ def put_item(company):
     return response
 
 
-def get_by_id(id):
+def get(id):
     response = table.get_item(Key={
         'id': id
     })

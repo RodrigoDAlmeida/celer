@@ -57,3 +57,9 @@ data "archive_file" "file_lambda_deleteCompany" {
   source_file     = "../src/lambda/company/delete_company.py"
   output_path      = "../build/lambdas/delete_company.zip"
 }
+
+data "archive_file" "file_lambda_getCompany" {
+  type             = "zip"
+  source_file     = "../src/lambda/company/get_company.py"
+  output_path      = "../build/lambdas/get_company.zip"
+}

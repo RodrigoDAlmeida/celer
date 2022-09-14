@@ -8,8 +8,8 @@ def create(name, abbreviation, email):
     return new_company
 
 
-def get_by_id(user_id):
-    return company_repository.get_by_id(user_id)
+def get_by_id(company_id):
+    return company_repository.get(company_id)
 
 
 def get_by_abbreviation(abbreviation):
