@@ -1,19 +1,17 @@
 import json
 import jsonpickle
-import user_service
+import company_service
 
 
 def lambda_handler(event, context):
     body = json.loads(event.get('body'))
-    user_id = body.get('id')
+    company_id = body.get('id')
     name = body.get('name')
-    login = body.get('login')
-    password = body.get('password')
-    active = body.get('active')
-    last_login = body.get('lastLogin')
+    abbreviation = body.get('abbreviation')
+    email = body.get('email')
 
     try:
-        user = user_service.update(name, login, password, last_login, active, user_id)
+        user = company_service.update(name, abbreviation, email, company_id)
         status_code = 200 if user is not None else 500
     except Exception as e:
         return {'statusCode': 400, 'body': str(e)}

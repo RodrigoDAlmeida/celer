@@ -69,3 +69,9 @@ data "archive_file" "file_lambda_listCompany" {
   source_file     = "../src/lambda/company/list_company.py"
   output_path      = "../build/lambdas/list_company.zip"
 }
+
+data "archive_file" "file_lambda_updateCompany" {
+  type             = "zip"
+  source_file     = "../src/lambda/company/update_company.py"
+  output_path      = "../build/lambdas/update_company.zip"
+}
