@@ -32,7 +32,7 @@ def update(name, abbreviation, email, company_id):
     company = Company(name, abbreviation, email, company_id)
     check_abbreviation(company)
     response = company_repository.put_item(company)
-    return company if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else None
+    return company if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 
 
 def check_exists(company_id):

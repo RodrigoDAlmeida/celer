@@ -7,9 +7,6 @@ table = dynamodb.Table('celer-user')
 
 
 def put_item(user):
-    if get_by_login(user.login):
-        raise Exception("login {} is already in use".format(user.login))
-
     response = table.put_item(
         Item={
             'id': user.id,
