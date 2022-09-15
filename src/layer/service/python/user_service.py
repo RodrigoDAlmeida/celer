@@ -31,7 +31,8 @@ def update(name, login, password, last_login, active, user_id):
     check_exists(user_id)
     user = User(name, login, password, last_login, active, user_id)
     check_login(user)
-    return user_repository.put_item(user)
+    response = user_repository.put_item(user)
+    return user if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 
 
 def do_login(username, password):
