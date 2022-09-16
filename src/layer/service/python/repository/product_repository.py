@@ -39,7 +39,7 @@ def delete_item(id):
 
 
 def get_by_company_abbreviation(company_abbreviation):
-    return table.query(IndexName='company_abbreviation-index', KeyConditionExpression=Key('company_abbreviation').eq(company_abbreviation)).get("Items")
+    return table.query(IndexName='company-abbreviation-index', KeyConditionExpression=Key('company_abbreviation').eq(company_abbreviation)).get("Items")
 
 
 
