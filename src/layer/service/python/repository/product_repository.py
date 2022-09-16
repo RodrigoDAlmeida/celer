@@ -11,9 +11,7 @@ def put_item(product):
         Item={
             'id': product.id,
             'name': product.name,
-            'company_abbreviation': product.company_abbreviation,
-            'purchase_price': product.purchase_price,
-            'sale_price': product.sale_price
+            'company_abbreviation': product.company_abbreviation
         }
     )
     return response

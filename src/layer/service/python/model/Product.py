@@ -2,11 +2,9 @@ import uuid
 
 
 class Product:
-    def __init__(self, name, purchase_price, sale_price, company_abbreviation, id=uuid.uuid4().hex) -> None:
+    def __init__(self, name, company_abbreviation, id=uuid.uuid4().hex) -> None:
         self.id = id
         self.name = name
-        self.purchase_price = purchase_price
-        self.sale_price = sale_price
         self.company_abbreviation = company_abbreviation
 
     @property

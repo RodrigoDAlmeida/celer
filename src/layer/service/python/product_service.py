@@ -3,8 +3,9 @@ from repository import company_repository
 from model.Product import Product
 
 
-def create(name, purchase_price, sale_price, company_abbreviation):
-    new_product = Product(name, purchase_price, sale_price, company_abbreviation)
+def create(name, company_abbreviation):
+    check_company_abbreviation(company_abbreviation)
+    new_product = Product(name, company_abbreviation)
     product_repository.put_item(new_product)
     return new_product
 
@@ -30,10 +31,10 @@ def remove(product_id):
     return response.get('ResponseMetadata').get('HTTPStatusCode') == 200
 
 
-def update(name, purchase_price, sale_price, company_abbreviation, product_id):
+def update(name, company_abbreviation, product_id):
     check_exists(product_id)
     check_company_abbreviation(company_abbreviation)
-    product = Product(name, purchase_price, sale_price, company_abbreviation, product_id)
+    product = Product(name, company_abbreviation, product_id)
     response = product_repository.put_item(product)
     return product if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 
@@ -45,5 +46,5 @@ def check_exists(product_id):
 
 def check_company_abbreviation(company_abbreviation):
     company = company_repository.get_by_abbreviation(company_abbreviation)
-    if company:
+    if not company:
         raise Exception("company abbreviation {} not found".format(company_abbreviation))
