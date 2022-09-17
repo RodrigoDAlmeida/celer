@@ -83,3 +83,9 @@ data "archive_file" "file_lambda_createProduct" {
   source_file     = "../src/lambda/product/create_product.py"
   output_path      = "../build/lambdas/create_product.zip"
 }
+
+data "archive_file" "file_lambda_deleteProduct" {
+  type             = "zip"
+  source_file     = "../src/lambda/company/delete_product.py"
+  output_path      = "../build/lambdas/delete_product.zip"
+}
