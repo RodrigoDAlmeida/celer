@@ -18,10 +18,7 @@ def put_item(product):
 
 
 def get(id):
-    response = table.get_item(Key={
-        'id': id
-    })
-    return response.get('Item')
+    return table.query(IndexName='id-index', KeyConditionExpression=Key('id').eq(id)).get("Item")
 
 
 def scan():

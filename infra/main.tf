@@ -61,6 +61,11 @@ resource "aws_dynamodb_table" "dynamodb_product"{
     name               = "company-abbreviation-index"
     projection_type    = "ALL"
   }
+  global_secondary_index {
+    hash_key           = "id"
+    name               = "id-index"
+    projection_type    = "ALL"
+  }
 }
 
 
