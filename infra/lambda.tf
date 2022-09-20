@@ -180,3 +180,14 @@ resource "aws_lambda_function" "lambda_list_products" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+
+resource "aws_lambda_function" "lambda_update_product" {
+  function_name = "celer-product-update"
+  filename         = data.archive_file.file_lambda_updateProduct.output_path
+  source_code_hash = data.archive_file.file_lambda_updateProduct.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "update_product.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
+}
