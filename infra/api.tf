@@ -145,6 +145,13 @@ resource "aws_api_gateway_method" "api_method_get_product_id" {
   authorization = "NONE"
 }
 
+resource "aws_api_gateway_method" "api_method_list_products_id" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_product.id
+  http_method   = "GET"
+  authorization = "NONE"
+}
+
 
 #INTEGRATIONS
 
@@ -272,6 +279,15 @@ resource "aws_api_gateway_integration" "api_integration_get_product" {
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
   uri                     = aws_lambda_function.lambda_get_product.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_list_product" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_list_products_id.resource_id
+  http_method = aws_api_gateway_method.api_method_list_products_id.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_list_products.invoke_arn
 }
 
 

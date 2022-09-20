@@ -95,3 +95,9 @@ data "archive_file" "file_lambda_getProduct" {
   source_file     = "../src/lambda/product/get_product.py"
   output_path      = "../build/lambdas/get_product.zip"
 }
+
+data "archive_file" "file_lambda_listProducts" {
+  type             = "zip"
+  source_file     = "../src/lambda/product/list_products.py"
+  output_path      = "../build/lambdas/list_products.zip"
+}
