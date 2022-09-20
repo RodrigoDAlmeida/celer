@@ -86,6 +86,24 @@ data "archive_file" "file_lambda_createProduct" {
 
 data "archive_file" "file_lambda_deleteProduct" {
   type             = "zip"
-  source_file     = "../src/lambda/company/delete_product.py"
+  source_file     = "../src/lambda/product/delete_product.py"
   output_path      = "../build/lambdas/delete_product.zip"
+}
+
+data "archive_file" "file_lambda_getProduct" {
+  type             = "zip"
+  source_file     = "../src/lambda/product/get_product.py"
+  output_path      = "../build/lambdas/get_product.zip"
+}
+
+data "archive_file" "file_lambda_listProducts" {
+  type             = "zip"
+  source_file     = "../src/lambda/product/list_products.py"
+  output_path      = "../build/lambdas/list_products.zip"
+}
+
+data "archive_file" "file_lambda_updateProduct" {
+  type             = "zip"
+  source_file     = "../src/lambda/product/update_product.py"
+  output_path      = "../build/lambdas/update_product.zip"
 }

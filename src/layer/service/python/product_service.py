@@ -6,6 +6,8 @@ from model.Product import Product
 def create(name, company_abbreviation):
     check_company_abbreviation(company_abbreviation)
     new_product = Product(name, company_abbreviation)
+    while product_repository.get(new_product.id):
+        new_product = Product(name, company_abbreviation)
     product_repository.put_item(new_product)
     return new_product
 

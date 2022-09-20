@@ -45,9 +45,9 @@ resource "aws_dynamodb_table" "dynamodb_company"{
 resource "aws_dynamodb_table" "dynamodb_product"{
   name = "celer-product"
   billing_mode = "PAY_PER_REQUEST"
-  hash_key = "company_abbreviation"
-  range_key = "id"
+  hash_key = "id"
   tags = {"App":"celer"}
+
   attribute{
     name = "id"
     type = "S"
