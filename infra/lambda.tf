@@ -158,3 +158,14 @@ resource "aws_lambda_function" "lambda_delete_product" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+
+resource "aws_lambda_function" "lambda_get_product" {
+  function_name = "celer-product-get"
+  filename         = data.archive_file.file_lambda_getProduct.output_path
+  source_code_hash = data.archive_file.file_lambda_getProduct.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "get_product.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  tags = {"App":"celer"}
+}

@@ -89,3 +89,9 @@ data "archive_file" "file_lambda_deleteProduct" {
   source_file     = "../src/lambda/product/delete_product.py"
   output_path      = "../build/lambdas/delete_product.zip"
 }
+
+data "archive_file" "file_lambda_getProduct" {
+  type             = "zip"
+  source_file     = "../src/lambda/product/get_product.py"
+  output_path      = "../build/lambdas/get_product.zip"
+}
