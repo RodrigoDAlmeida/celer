@@ -88,7 +88,6 @@ resource "aws_api_gateway_method" "api_method_product" {
   authorization = "NONE"
 }
 
-
 resource "aws_api_gateway_method" "api_method_delete_product_id" {
   rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
   resource_id   = aws_api_gateway_resource.api_proxy_product_id.id
@@ -114,5 +113,14 @@ resource "aws_api_gateway_method" "api_method_update_product" {
   rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
   resource_id   = aws_api_gateway_resource.api_proxy_product.id
   http_method   = "PUT"
+  authorization = "NONE"
+}
+
+# PRODUCT MODEL
+
+resource "aws_api_gateway_method" "api_method_create_product_model" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_product_model.id
+  http_method   = "POST"
   authorization = "NONE"
 }
