@@ -2,8 +2,8 @@ import uuid
 
 
 class Product:
-    def __init__(self, name, company_abbreviation, id=uuid.uuid4().hex) -> None:
-        self.id = id
+    def __init__(self, name, company_abbreviation, id=None) -> None:
+        self.id = id if id else uuid.uuid4().hex
         self.name = name
         self.company_abbreviation = company_abbreviation
 

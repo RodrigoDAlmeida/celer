@@ -1,8 +1,9 @@
 import boto3
 from boto3.dynamodb.conditions import Key
+from decimal import Decimal
 
 dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('celer-product')
+table = dynamodb.Table('celer-product-model')
 
 
 def put_item(product_model):
@@ -11,8 +12,8 @@ def put_item(product_model):
             'id': product_model.id,
             'name': product_model.name,
             'product_id': product_model.product_id,
-            'purchase_price': product_model.purchase_price,
-            'sale_price': product_model.sale_price
+            'purchase_price': Decimal(str(product_model.purchase_price)),
+            'sale_price': Decimal(str(product_model.sale_price))
         }
     )
     return response

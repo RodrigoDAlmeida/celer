@@ -3,8 +3,8 @@ import uuid
 
 
 class User:
-    def __init__(self, name, login, password, last_login=None, active=True, id=uuid.uuid4().hex) -> None:
-        self.id = id
+    def __init__(self, name, login, password, last_login=None, active=True, id=None) -> None:
+        self.id = id if id else uuid.uuid4().hex
         self.name = name
         self.login = login
         self.password = password
