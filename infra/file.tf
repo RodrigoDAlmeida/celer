@@ -6,6 +6,12 @@ data "archive_file" "file_service_lambda_layer" {
   output_path      = "../build/service_lambda_layer.zip"
 }
 
+data "archive_file" "file_util_lambda_layer" {
+  type             = "zip"
+  source_dir     = "../src/layer/util/"
+  output_path      = "../build/util_lambda_layer.zip"
+}
+
 #Lambdas
 #USER
 data "archive_file" "file_lambda_createUser" {
@@ -118,4 +124,10 @@ data "archive_file" "file_lambda_deleteProductModel" {
   type             = "zip"
   source_file     = "../src/lambda/product_model/delete_product_model.py"
   output_path      = "../build/lambdas/delete_product_model.zip"
+}
+
+data "archive_file" "file_lambda_getProductModel" {
+  type             = "zip"
+  source_file     = "../src/lambda/product_model/get_product_model.py"
+  output_path      = "../build/lambdas/get_product_model.zip"
 }

@@ -131,3 +131,10 @@ resource "aws_api_gateway_method" "api_method_delete_product_model_id" {
   http_method   = "DELETE"
   authorization = "NONE"
 }
+
+resource "aws_api_gateway_method" "api_method_get_product_model_id" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_product_model_id.id
+  http_method   = "GET"
+  authorization = "NONE"
+}
