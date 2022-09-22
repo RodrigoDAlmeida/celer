@@ -193,12 +193,23 @@ resource "aws_lambda_function" "lambda_update_product" {
 }
 
 resource "aws_lambda_function" "lambda_create_product_model" {
-  function_name = "celer-productmodel-update"
+  function_name = "celer-productmodel-create"
   filename         = data.archive_file.file_lambda_createProductModel.output_path
   source_code_hash = data.archive_file.file_lambda_createProductModel.output_base64sha256
   role    = aws_iam_role.lambda-role.arn
   handler = "create_product_model.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  tags = {"App":"celer"}
+}
+
+resource "aws_lambda_function" "lambda_delete_product_model" {
+  function_name = "celer-productmodel-delete"
+  filename         = data.archive_file.file_lambda_deleteProductModel.output_path
+  source_code_hash = data.archive_file.file_lambda_deleteProductModel.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "delete_product_model.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }

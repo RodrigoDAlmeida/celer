@@ -113,3 +113,9 @@ data "archive_file" "file_lambda_createProductModel" {
   source_file     = "../src/lambda/product_model/create_product_model.py"
   output_path      = "../build/lambdas/create_product_model.zip"
 }
+
+data "archive_file" "file_lambda_deleteProductModel" {
+  type             = "zip"
+  source_file     = "../src/lambda/product_model/delete_product_model.py"
+  output_path      = "../build/lambdas/delete_product_model.zip"
+}
