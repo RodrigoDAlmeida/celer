@@ -1,7 +1,5 @@
 import json
-import jsonpickle
-from src.layer.service.python import product_model_service
-from decimal import Decimal
+import product_model_service
 
 
 def lambda_handler(event, context):
@@ -19,5 +17,5 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': status_code,
-        'body': new_product_model.toJSON()
+        'body': json.dumps(new_product_model.toDict())
     }

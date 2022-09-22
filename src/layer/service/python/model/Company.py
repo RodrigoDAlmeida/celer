@@ -8,6 +8,12 @@ class Company:
         self.abbreviation = abbreviation
         self.email = email
 
+    def toDict(self):
+        return {"id": self.id,
+                "name": self.name,
+                "abbreviation": self.abbreviation,
+                "email": self.email}
+
     @property
     def name(self):
         return self._name

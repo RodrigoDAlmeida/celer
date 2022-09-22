@@ -10,9 +10,12 @@ class ProductModel:
         self.purchase_price = purchase_price
         self.sale_price = sale_price
 
-    def toJSON(self):
-        return json.dumps(self, default=lambda o: o.__dict__,
-                          sort_keys=True, indent=4)
+    def toDict(self):
+        return {"id": self.id,
+                "name": self.name,
+                "product_id": self.product_id,
+                "purchase_price": self.purchase_price,
+                "sale_price": self.sale_price}
 
     @property
     def sale_price(self):

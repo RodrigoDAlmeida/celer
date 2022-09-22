@@ -11,6 +11,14 @@ class User:
         self.active = active
         self.last_login = datetime.now().isoformat() if last_login is None else last_login
 
+    def toDict(self):
+        return {"id": self.id,
+                "name": self.name,
+                "login": self.login,
+                "password": self.password,
+                "active": self.active,
+                "last_login": self.last_login}
+
     @property
     def name(self):
         return self._name

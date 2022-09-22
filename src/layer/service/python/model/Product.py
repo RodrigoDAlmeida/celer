@@ -7,6 +7,11 @@ class Product:
         self.name = name
         self.company_abbreviation = company_abbreviation
 
+    def toDict(self):
+        return {"id": self.id,
+                "name": self.name,
+                "company_abbreviation": self.company_abbreviation}
+
     @property
     def name(self):
         return self._name
