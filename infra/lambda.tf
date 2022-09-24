@@ -228,6 +228,6 @@ resource "aws_lambda_function" "lambda_get_product_model" {
   role    = aws_iam_role.lambda-role.arn
   handler = "get_product_model.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }

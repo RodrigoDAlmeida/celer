@@ -1,6 +1,6 @@
 import json
 import product_model_service
-
+import encoder
 
 def lambda_handler(event, context):
     id = event.get('pathParameters').get('id')
@@ -12,7 +12,6 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': status_code,
-        'body': json.dumps(item, use_decimal=True)
+        'body': json.dumps(item, cls=encoder.DecimalEncoder)
     }
-
 
