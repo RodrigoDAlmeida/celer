@@ -146,3 +146,50 @@ resource "aws_api_gateway_integration" "api_integration_update_product" {
   type                    = "AWS_PROXY"
   uri                     = aws_lambda_function.lambda_update_product.invoke_arn
 }
+
+# PRODUCT MODEL
+
+resource "aws_api_gateway_integration" "api_integration_create_product_model" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_create_product_model.resource_id
+  http_method = aws_api_gateway_method.api_method_create_product_model.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_create_product_model.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_delete_product_model" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_delete_product_model_id.resource_id
+  http_method = aws_api_gateway_method.api_method_delete_product_model_id.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_delete_product_model.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_get_product_model" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_get_product_model_id.resource_id
+  http_method = aws_api_gateway_method.api_method_get_product_model_id.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_get_product_model.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_list_product_model" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_get_product_model_product_id.resource_id
+  http_method = aws_api_gateway_method.api_method_get_product_model_product_id.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_list_product_model.invoke_arn
+}
+
+resource "aws_api_gateway_integration" "api_integration_update_product_model" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_update_product_model.resource_id
+  http_method = aws_api_gateway_method.api_method_update_product_model.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_update_product_model.invoke_arn
+}

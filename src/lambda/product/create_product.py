@@ -16,5 +16,5 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': status_code,
-        'body': jsonpickle.encode(new_product, unpicklable=False)
+        'body': json.dumps(new_product.toDict())
     }

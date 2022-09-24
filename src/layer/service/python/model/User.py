@@ -3,13 +3,21 @@ import uuid
 
 
 class User:
-    def __init__(self, name, login, password, last_login=None, active=True, id=uuid.uuid4().hex) -> None:
-        self.id = id
+    def __init__(self, name, login, password, last_login=None, active=True, id=None) -> None:
+        self.id = id if id else uuid.uuid4().hex
         self.name = name
         self.login = login
         self.password = password
         self.active = active
         self.last_login = datetime.now().isoformat() if last_login is None else last_login
+
+    def toDict(self):
+        return {"id": self.id,
+                "name": self.name,
+                "login": self.login,
+                "password": self.password,
+                "active": self.active,
+                "last_login": self.last_login}
 
     @property
     def name(self):

@@ -2,11 +2,17 @@ import uuid
 
 
 class Company:
-    def __init__(self, name, abbreviation, email, id=uuid.uuid4().hex) -> None:
-        self.id = id
+    def __init__(self, name, abbreviation, email, id=None) -> None:
+        self.id = id if id else uuid.uuid4().hex
         self.name = name
         self.abbreviation = abbreviation
         self.email = email
+
+    def toDict(self):
+        return {"id": self.id,
+                "name": self.name,
+                "abbreviation": self.abbreviation,
+                "email": self.email}
 
     @property
     def name(self):
