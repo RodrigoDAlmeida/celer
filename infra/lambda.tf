@@ -242,3 +242,14 @@ resource "aws_lambda_function" "lambda_list_product_model" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+
+resource "aws_lambda_function" "lambda_update_product_model" {
+  function_name = "celer-productmodel-update"
+  filename         = data.archive_file.file_lambda_updateProductModel.output_path
+  source_code_hash = data.archive_file.file_lambda_updateProductModel.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "update_product_model.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
+  tags = {"App":"celer"}
+}
