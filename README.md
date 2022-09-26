@@ -14,4 +14,4 @@ After execution, all infrastructure will be provisioned in your AWS account and 
 
 ## Database Scheme
 
-![Database Scheme](https://serving.photos.photobox.com/24431986374b3740c2609ec8cd86d87ab180e905315ccc10e44898de2c127b905c3deb41.jpg)
+![Database Scheme](https://serving.photos.photobox.com/19452723a12274f6c79318124e3789c5961f49c46b8d94029bb54b3030650353b198fa76.jpg)
