@@ -1,8 +1,15 @@
 from datetime import datetime
+from enum import Enum
+
+
+class Status(Enum):
+    OPEN = 'O'
+    RUNNING = 'R'
+    FINISHED = 'F'
 
 
 class Order:
-    def __init__(self, id, user_id, description, status='O', date=None) -> None:
+    def __init__(self, id, user_id, description, status=Status.OPEN, date=None) -> None:
         self.id = id
         self.user_id = user_id
         self.description = description
@@ -13,7 +20,7 @@ class Order:
         return {"id": self.id,
                 "user_id": self.user_id,
                 "description": self.description,
-                "status": self.status,
+                "status": self.status.name,
                 "date": self.date}
 
     @property

@@ -11,7 +11,7 @@ def put_item(order):
             'id': order.id,
             'user_id': order.user_id,
             'description': order.description,
-            'status': order.status,
+            'status': order.status.value,
             'date': order.date
         }
     )
@@ -42,7 +42,7 @@ def get_by_user_id(user_id):
 
 
 def get_table_count():
-    return table.item_count
+    return len(scan())
 
 
 

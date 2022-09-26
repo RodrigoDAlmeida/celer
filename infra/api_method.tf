@@ -152,3 +152,12 @@ resource "aws_api_gateway_method" "api_method_get_product_model_product_id" {
   http_method   = "GET"
   authorization = "NONE"
 }
+
+#ORDER
+
+resource "aws_api_gateway_method" "api_method_create_order" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_order.id
+  http_method   = "POST"
+  authorization = "NONE"
+}

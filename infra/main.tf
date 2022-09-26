@@ -84,6 +84,27 @@ resource "aws_dynamodb_table" "dynamodb_product_model"{
   }
 }
 
+resource "aws_dynamodb_table" "dynamodb_order"{
+  name = "celer-order"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key = "id"
+  tags = {"App":"celer"}
+
+  attribute{
+    name = "id"
+    type = "N"
+  }
+  attribute{
+    name = "user_id"
+    type = "S"
+  }
+  global_secondary_index {
+    hash_key           = "user_id"
+    name               = "user-id-index"
+    projection_type    = "ALL"
+  }
+}
+
 
 
 

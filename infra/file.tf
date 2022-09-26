@@ -114,6 +114,8 @@ data "archive_file" "file_lambda_updateProduct" {
   output_path      = "../build/lambdas/update_product.zip"
 }
 
+#PRODUCT MODEL
+
 data "archive_file" "file_lambda_createProductModel" {
   type             = "zip"
   source_file     = "../src/lambda/product_model/create_product_model.py"
@@ -142,4 +144,12 @@ data "archive_file" "file_lambda_updateProductModel" {
   type             = "zip"
   source_file     = "../src/lambda/product_model/update_product_model.py"
   output_path      = "../build/lambdas/update_product_model.zip"
+}
+
+#ORDER
+
+data "archive_file" "file_lambda_createOrder" {
+  type             = "zip"
+  source_file     = "../src/lambda/order/create_order.py"
+  output_path      = "../build/lambdas/create_order.zip"
 }
