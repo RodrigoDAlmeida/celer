@@ -74,3 +74,8 @@ resource "aws_api_gateway_resource" "api_proxy_order" {
   path_part   = "order"
 }
 
+resource "aws_api_gateway_resource" "api_proxy_order_id" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  parent_id   = aws_api_gateway_resource.api_proxy_order.id
+  path_part   = "{id}"
+}

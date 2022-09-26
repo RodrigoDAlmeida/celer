@@ -3,6 +3,7 @@ from boto3.dynamodb.conditions import Key
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('celer-order')
+table_id_factory = dynamodb.Table('celer-id-factory')
 
 
 def put_item(order):
@@ -41,8 +42,22 @@ def get_by_user_id(user_id):
     return table.query(IndexName='product-id-index', KeyConditionExpression=Key('user_id').eq(user_id)).get("Items")
 
 
-def get_table_count():
-    return len(scan())
+def get_biggest_id():
+    return max([item[1] for item in scan()])
+
+
+def get_next_id():
+    last_id = table_id_factory.get_item(Key={
+        'table': 'order'
+    }).get('Item')
+
+    if not last_id:
+        next_id = 1
+    else:
+        next_id = last_id['id'] + 1
+
+    table_id_factory.put_item(Item={'table': 'order', 'id': next_id})
+    return int(next_id)
 
 
 

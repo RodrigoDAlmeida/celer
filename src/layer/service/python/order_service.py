@@ -52,5 +52,5 @@ def check_user_id(user_id):
 
 
 def get_next_order_id():
-    return order_repository.get_table_count() + 1
+    return order_repository.get_next_id()
 
