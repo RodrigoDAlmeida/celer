@@ -9,7 +9,8 @@
         "dynamodb:PutItem",
         "dynamodb:Scan",
         "dynamodb:UpdateItem",
-        "dynamodb:Query"
+        "dynamodb:Query",
+        "dynamodb:DescribeTable"
 
       ],
       "Resource": "*"
