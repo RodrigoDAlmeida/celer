@@ -214,11 +214,11 @@ resource "aws_api_gateway_integration" "api_integration_delete_order" {
   uri                     = aws_lambda_function.lambda_delete_order.invoke_arn
 }
 
-resource "aws_api_gateway_integration" "api_integration_get_order" {
+resource "aws_api_gateway_integration" "api_integration_list_order_by_user_id" {
   rest_api_id = aws_api_gateway_rest_api.api_gateway.id
-  resource_id = aws_api_gateway_method.api_method_get_order.resource_id
-  http_method = aws_api_gateway_method.api_method_get_order.http_method
+  resource_id = aws_api_gateway_method.api_method_list_order_by_user_id.resource_id
+  http_method = aws_api_gateway_method.api_method_list_order_by_user_id.http_method
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
-  uri                     = aws_lambda_function.lambda_get_order.invoke_arn
+  uri                     = aws_lambda_function.lambda_list_order.invoke_arn
 }

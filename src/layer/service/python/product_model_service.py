@@ -21,10 +21,6 @@ def get_by_product_id(product_id):
     return product_model_repository.get_by_product_id(product_id)
 
 
-def get_all():
-    return product_model_repository.scan()
-
-
 def remove(product_model_id):
     check_exists(product_model_id)
     response = product_model_repository.delete_item(product_model_id)

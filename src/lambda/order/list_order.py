@@ -1,12 +1,12 @@
 import json
-import product_model_service
+import order_service
 import encoder
 
 
 def lambda_handler(event, context):
-    product_id = event.get('pathParameters').get('product-id')
+    user_id = event.get('pathParameters').get('user-id')
     try:
-        items = product_model_service.get_by_product_id(product_id)
+        items = order_service.get_all_by_user_id(user_id)
         status_code = 200 if items is not None else 204
     except Exception as e:
         return {'statusCode': 400, 'body': str(e)}

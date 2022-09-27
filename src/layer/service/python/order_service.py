@@ -40,6 +40,10 @@ def update(user_id, description, status, order_id, date):
     return order if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 
 
+def get_all_by_user_id(user_id):
+    return order_repository.get_by_user_id(user_id)
+
+
 def check_exists(order_id):
     if not get_by_id(order_id):
         raise Exception('product model {} not found'.format(order_id))

@@ -39,7 +39,7 @@ def delete_item(id):
 
 
 def get_by_user_id(user_id):
-    return table.query(IndexName='product-id-index', KeyConditionExpression=Key('user_id').eq(user_id)).get("Items")
+    return table.query(IndexName='user-id-index', KeyConditionExpression=Key('user_id').eq(user_id)).get("Items")
 
 
 def get_biggest_id():

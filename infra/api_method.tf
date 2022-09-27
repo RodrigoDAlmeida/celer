@@ -175,3 +175,10 @@ resource "aws_api_gateway_method" "api_method_get_order" {
   http_method   = "GET"
   authorization = "NONE"
 }
+
+resource "aws_api_gateway_method" "api_method_list_order_by_user_id" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_order_list_by_user_id.id
+  http_method   = "GET"
+  authorization = "NONE"
+}

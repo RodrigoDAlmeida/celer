@@ -165,3 +165,9 @@ data "archive_file" "file_lambda_getOrder" {
   source_file     = "../src/lambda/order/get_order.py"
   output_path      = "../build/lambdas/get_order.zip"
 }
+
+data "archive_file" "file_lambda_listOrder" {
+  type             = "zip"
+  source_file     = "../src/lambda/order/list_order.py"
+  output_path      = "../build/lambdas/list_order.zip"
+}
