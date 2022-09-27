@@ -159,3 +159,9 @@ data "archive_file" "file_lambda_deleteOrder" {
   source_file     = "../src/lambda/order/delete_order.py"
   output_path      = "../build/lambdas/delete_order.zip"
 }
+
+data "archive_file" "file_lambda_getOrder" {
+  type             = "zip"
+  source_file     = "../src/lambda/order/get_order.py"
+  output_path      = "../build/lambdas/get_order.zip"
+}
