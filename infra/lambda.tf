@@ -299,3 +299,14 @@ resource "aws_lambda_function" "lambda_list_order" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+
+resource "aws_lambda_function" "lambda_update_order" {
+  function_name = "celer-order-update"
+  filename         = data.archive_file.file_lambda_updateOrder.output_path
+  source_code_hash = data.archive_file.file_lambda_updateOrder.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "update_order.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  tags = {"App":"celer"}
+}

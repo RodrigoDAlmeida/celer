@@ -1,6 +1,6 @@
 from repository import order_repository
 from repository import user_repository
-from model.Order import Order
+from model.Order import Order, Status
 
 
 def create(user_id, description):
@@ -35,7 +35,7 @@ def remove(order_id):
 def update(user_id, description, status, order_id, date):
     check_exists(order_id)
     check_user_id(user_id)
-    order = Order(order_id, user_id,  description, status, date)
+    order = Order(order_id, user_id,  description, Status(status), date)
     response = order_repository.put_item(order)
     return order if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 
