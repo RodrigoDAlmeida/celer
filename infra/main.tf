@@ -117,6 +117,27 @@ resource "aws_dynamodb_table" "dynamodb_id_factory"{
   }
 }
 
+resource "aws_dynamodb_table" "dynamodb_purchase"{
+  name = "celer-purchase"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key = "id"
+  tags = {"App":"celer"}
+
+  attribute{
+    name = "id"
+    type = "N"
+  }
+  attribute{
+    name = "order_id"
+    type = "N"
+  }
+  global_secondary_index {
+    hash_key           = "order_id"
+    name               = "order-id-index"
+    projection_type    = "ALL"
+  }
+}
+
 
 
 
