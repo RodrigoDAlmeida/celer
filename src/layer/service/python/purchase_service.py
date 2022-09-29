@@ -1,6 +1,4 @@
 from repository import purchase_repository
-from repository import product_model_repository
-from repository import order_repository
 from model.Purchase import Purchase
 
 

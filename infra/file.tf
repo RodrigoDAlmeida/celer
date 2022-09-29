@@ -177,3 +177,11 @@ data "archive_file" "file_lambda_updateOrder" {
   source_file     = "../src/lambda/order/update_order.py"
   output_path      = "../build/lambdas/update_order.zip"
 }
+
+# PURCHASE
+
+data "archive_file" "file_lambda_createPurchase" {
+  type             = "zip"
+  source_file     = "../src/lambda/purchase/create_purchase.py"
+  output_path      = "../build/lambdas/create_purchase.zip"
+}

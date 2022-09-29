@@ -189,3 +189,12 @@ resource "aws_api_gateway_method" "api_method_update_order" {
   http_method   = "PUT"
   authorization = "NONE"
 }
+
+# PURCHASE
+
+resource "aws_api_gateway_method" "api_method_create_purchase" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_purchase.id
+  http_method   = "POST"
+  authorization = "NONE"
+}
