@@ -45,4 +45,4 @@ class Purchase:
     def quantity(self, d):
         if not d > 0:
             raise Exception("quantity must be greater than zero")
-        self._password = d
+        self._quantity = d

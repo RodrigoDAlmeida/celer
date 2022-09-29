@@ -10,7 +10,7 @@ def put_item(purchase):
         Item={
             'id': purchase.id,
             "product_model_id": purchase.product_model_id,
-            "purchase_id": purchase.purchase_id,
+            "order_id": purchase.order_id,
             "quantity": purchase.quantity,
             "date": purchase.date
         }

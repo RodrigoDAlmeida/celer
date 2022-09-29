@@ -125,7 +125,7 @@ resource "aws_dynamodb_table" "dynamodb_purchase"{
 
   attribute{
     name = "id"
-    type = "N"
+    type = "S"
   }
   attribute{
     name = "order_id"
