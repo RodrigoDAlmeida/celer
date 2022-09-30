@@ -321,3 +321,14 @@ resource "aws_lambda_function" "lambda_create_purchase" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+
+resource "aws_lambda_function" "lambda_delete_purchase" {
+  function_name = "celer-purchase-delete"
+  filename         = data.archive_file.file_lambda_deletePurchase.output_path
+  source_code_hash = data.archive_file.file_lambda_deletePurchase.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "delete_purchase.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  tags = {"App":"celer"}
+}

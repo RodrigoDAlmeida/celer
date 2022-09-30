@@ -185,3 +185,9 @@ data "archive_file" "file_lambda_createPurchase" {
   source_file     = "../src/lambda/purchase/create_purchase.py"
   output_path      = "../build/lambdas/create_purchase.zip"
 }
+
+data "archive_file" "file_lambda_deletePurchase" {
+  type             = "zip"
+  source_file     = "../src/lambda/purchase/delete_purchase.py"
+  output_path      = "../build/lambdas/delete_purchase.zip"
+}
