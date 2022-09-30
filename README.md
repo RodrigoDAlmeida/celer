@@ -10,8 +10,18 @@ With Terraform properly configured to an AWS account, open the terminal in the /
 ```shell
 terraform apply
 ```
-After execution, all infrastructure will be provisioned in your AWS account and you are ready to start using
+After execution, all infrastructure will be provisioned in the AWS account and you are ready to start using
 
 ## Database Scheme
 
 ![Database Scheme](https://serving.photos.photobox.com/19452723a12274f6c79318124e3789c5961f49c46b8d94029bb54b3030650353b198fa76.jpg)
+
+## Api Gateway
+
+Api Gateway has CRUD methods for each database entity, and each REST method has a unique lambda function for that procedure
+
+<details><summary>Api Gateway Methods</summary>
+
+![Database Scheme](https://serving.photos.photobox.com/70006793a64552b42faa20fbb10f0ff4b30149d906f62e8bfd035db2f65f03ab95344e12.jpg)
+</details>
+
