@@ -258,3 +258,12 @@ resource "aws_api_gateway_integration" "api_integration_list_purchase" {
   type                    = "AWS_PROXY"
   uri                     = aws_lambda_function.lambda_list_purchase.invoke_arn
 }
+
+resource "aws_api_gateway_integration" "api_integration_update_purchase" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  resource_id = aws_api_gateway_method.api_method_update_purchase.resource_id
+  http_method = aws_api_gateway_method.api_method_update_purchase.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_update_purchase.invoke_arn
+}

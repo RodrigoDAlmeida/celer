@@ -25,6 +25,6 @@ def remove(purchase_id):
 
 
 def update(purchase_id, product_model_id, order_id, quantity, date):
-    purchase = Purchase(product_model_id, order_id, quantity, purchase_id, date)
+    purchase = Purchase(product_model_id, order_id, quantity, date, purchase_id)
     response = purchase_repository.put_item(purchase)
     return purchase if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
