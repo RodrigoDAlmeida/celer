@@ -1,4 +1,4 @@
-import jsonpickle
+import json
 import company_service
 
 
@@ -11,5 +11,5 @@ def lambda_handler(event, context):
 
     return {
             'statusCode': status_code,
-            'body': jsonpickle.encode(items, unpicklable=False)
+            'body': json.dumps(items)
         }
