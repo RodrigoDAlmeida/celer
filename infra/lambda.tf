@@ -1,5 +1,5 @@
 #Layers
-resource "aws_lambda_layer_version" "jsonpickle_lambda_layer" {
+resource "aws_lambda_layer_version" "_unused_jsonpickle_lambda_layer" {
   filename   = "../dep-layers/jsonpickle.zip"
   layer_name = "jsonpickle"
   compatible_runtimes = [var.python_version]
@@ -28,7 +28,7 @@ resource "aws_lambda_function" "lambda_create_user" {
   role    = aws_iam_role.lambda-role.arn
   handler = "create_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -39,7 +39,7 @@ resource "aws_lambda_function" "lambda_get_user" {
   role    = aws_iam_role.lambda-role.arn
   handler = "get_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -50,7 +50,7 @@ resource "aws_lambda_function" "lambda_list_users" {
   role    = aws_iam_role.lambda-role.arn
   handler = "list_users.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -61,7 +61,7 @@ resource "aws_lambda_function" "lambda_login" {
   role    = aws_iam_role.lambda-role.arn
   handler = "login.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -72,7 +72,7 @@ resource "aws_lambda_function" "lambda_deleteUser" {
   role    = aws_iam_role.lambda-role.arn
   handler = "delete_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -83,7 +83,7 @@ resource "aws_lambda_function" "lambda_update_user" {
   role    = aws_iam_role.lambda-role.arn
   handler = "update_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 #Company
@@ -95,7 +95,7 @@ resource "aws_lambda_function" "lambda_create_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "create_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -106,7 +106,7 @@ resource "aws_lambda_function" "lambda_delete_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "delete_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -117,7 +117,7 @@ resource "aws_lambda_function" "lambda_get_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "get_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -128,7 +128,7 @@ resource "aws_lambda_function" "lambda_list_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "list_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -139,7 +139,7 @@ resource "aws_lambda_function" "lambda_update_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "update_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -151,7 +151,7 @@ resource "aws_lambda_function" "lambda_create_product" {
   role    = aws_iam_role.lambda-role.arn
   handler = "create_product.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -162,7 +162,7 @@ resource "aws_lambda_function" "lambda_delete_product" {
   role    = aws_iam_role.lambda-role.arn
   handler = "delete_product.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -173,7 +173,7 @@ resource "aws_lambda_function" "lambda_get_product" {
   role    = aws_iam_role.lambda-role.arn
   handler = "get_product.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -184,7 +184,7 @@ resource "aws_lambda_function" "lambda_list_products" {
   role    = aws_iam_role.lambda-role.arn
   handler = "list_products.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -195,7 +195,7 @@ resource "aws_lambda_function" "lambda_update_product" {
   role    = aws_iam_role.lambda-role.arn
   handler = "update_product.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.jsonpickle_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 

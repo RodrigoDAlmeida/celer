@@ -1,5 +1,4 @@
 import json
-import jsonpickle
 import user_service
 
 
@@ -17,5 +16,5 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': status_code,
-        'body': jsonpickle.encode(new_user, unpicklable=False)
+        'body': json.dumps(new_user.toDict())
     }
