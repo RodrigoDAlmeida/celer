@@ -15,7 +15,7 @@ def get_by_id(purchase_id):
     return purchase
 
 
-def get_by_order(order_id):
+def get_by_order_id(order_id):
     return purchase_repository.get_by_order_id(order_id)
 
 
