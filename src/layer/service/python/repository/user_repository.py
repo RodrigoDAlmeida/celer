@@ -13,7 +13,7 @@ def put_item(user):
             'name': user.name,
             'login': user.login,
             'password': user.password,
-            'lastLogin': user.last_login,
+            'last_login': user.last_login,
             'active': user.active
         }
     )
@@ -40,7 +40,8 @@ def delete_item(id):
 
 
 def get_by_login(login):
-    return table.query(IndexName='login-index', KeyConditionExpression=Key('login').eq(login)).get("Items")
+    response = table.query(IndexName='login-index', KeyConditionExpression=Key('login').eq(login)).get("Items")
+    return response[0] if response else None
 
 
 

@@ -1,5 +1,6 @@
 from repository import user_repository
 from model.User import User
+from datetime import datetime
 
 
 def create(name, login, password):
@@ -41,7 +42,8 @@ def do_login(username, password):
         user_password = user.get('password')
         if user_password == password:
             u = User(**user)
-            create(u)
+            u.last_login = datetime.now().isoformat()
+            user_repository.put_item(u)
             return u
 
     return None
@@ -54,5 +56,5 @@ def check_exists(user_id):
 
 def check_login(user):
     user_login = get_by_login(user.login)
-    if user_login and user.id != user_login[0].get('id'):
+    if user_login and user.id != user_login.get('id'):
         raise Exception("login {} is already in use".format(user.login))

@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     login = body.get('login')
     password = body.get('password')
     active = body.get('active')
-    last_login = body.get('lastLogin')
+    last_login = body.get('last_login')
 
     try:
         user = user_service.update(name, login, password, last_login, active, user_id)
