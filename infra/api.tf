@@ -103,3 +103,15 @@ resource "aws_api_gateway_resource" "api_proxy_purchase_id" {
   parent_id   = aws_api_gateway_resource.api_proxy_purchase.id
   path_part   = "{id}"
 }
+
+resource "aws_api_gateway_resource" "api_proxy_purchase_view" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  parent_id   = aws_api_gateway_resource.api_proxy_purchase.id
+  path_part   = "view"
+}
+
+resource "aws_api_gateway_resource" "api_proxy_purchase_view_id" {
+  rest_api_id = aws_api_gateway_rest_api.api_gateway.id
+  parent_id   = aws_api_gateway_resource.api_proxy_purchase_view.id
+  path_part   = "{order-id}"
+}

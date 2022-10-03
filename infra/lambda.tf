@@ -354,3 +354,14 @@ resource "aws_lambda_function" "lambda_update_purchase" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+
+resource "aws_lambda_function" "lambda_list_purchase_view" {
+  function_name = "celer-purchase-list-view"
+  filename         = data.archive_file.file_lambda_listPurchaseView.output_path
+  source_code_hash = data.archive_file.file_lambda_listPurchaseView.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "list_purchase_view.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
+  tags = {"App":"celer"}
+}

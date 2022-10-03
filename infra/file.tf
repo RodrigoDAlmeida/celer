@@ -203,3 +203,10 @@ data "archive_file" "file_lambda_updatePurchase" {
   source_file     = "../src/lambda/purchase/update_purchase.py"
   output_path      = "../build/lambdas/update_purchase.zip"
 }
+
+data "archive_file" "file_lambda_listPurchaseView" {
+  type             = "zip"
+  source_file     = "../src/lambda/purchase/list_purchase_view.py"
+  output_path      = "../build/lambdas/list_purchase_view.zip"
+}
+
