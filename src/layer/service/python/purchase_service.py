@@ -3,10 +3,12 @@ from repository import product_model_repository
 from repository import product_repository
 from view.PurchaseView import PurchaseView
 from model.Purchase import Purchase
+from model.Product import Product
+from model.ProductModel import ProductModel
 
 
-def create(purchase_model_id, order_id, quantity):
-    new_purchase = Purchase(purchase_model_id, order_id, quantity)
+def create(product_model_id, order_id, quantity):
+    new_purchase = Purchase(product_model_id, order_id, quantity)
     purchase_repository.put_item(new_purchase)
     return new_purchase
 
@@ -53,4 +55,55 @@ def list_purchase_view_by_order_id(order_id):
                             product['company_abbreviation'])
         purchases_view.append(view.toDict())
 
+        #create_purchase_batch(1, "068e975592a644fe9f0b451918b9e07f", "Chapa de fogão", "B",
+        #                      [{"product_model_id": "2474d65c099a4e5e9eadf6997902a32d",
+        #                        "product_model_name": "3F com redução",
+        #                        "quantity": 3,
+        #                        "purchase_price": 5.23,
+        #                        "sale_price": 8.99}])
+
     return purchases_view
+
+
+def create_purchase_batch(order_id, product_id, product_name, company_abbreviation, purchases):
+    included_product = ''
+    included_products_models = []
+    included_purchases = []
+
+    if not product_id or product_id == '':
+        new_product = Product(product_name, company_abbreviation)
+        product_repository.put_item(new_product)
+        included_product = new_product.toDict()
+        product_id = new_product.id
+
+    for purchase in purchases:
+        product_model_id = purchase.get('product_model_id')
+        if not product_model_id or product_model_id == '':
+            new_product_model = ProductModel(purchase['product_model_name'],
+                                             product_id,
+                                             purchase['purchase_price'],
+                                             purchase['sale_price'])
+            product_model_repository.put_item(new_product_model)
+            included_products_models.append(new_product_model.toDict())
+            product_model_id = new_product_model.id
+
+        new_purchase = Purchase(product_model_id, order_id, purchase['quantity'])
+        purchase_repository.put_item(new_purchase)
+        purchase_view = PurchaseView(new_purchase.id,
+                                     new_purchase.product_model_id,
+                                     new_purchase.order_id,
+                                     new_purchase.quantity,
+                                     new_purchase.date,
+                                     purchase['product_model_name'],
+                                     product_id,
+                                     purchase['purchase_price'],
+                                     purchase['sale_price'],
+                                     product_name,
+                                     company_abbreviation)
+
+        included_purchases.append(purchase_view.toDict())
+
+    return {"included_products": included_product,
+            "included_product_models": included_products_models,
+            "included_purchases:": included_purchases
+            }
