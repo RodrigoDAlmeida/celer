@@ -210,3 +210,9 @@ data "archive_file" "file_lambda_listPurchaseView" {
   output_path      = "../build/lambdas/list_purchase_view.zip"
 }
 
+data "archive_file" "file_lambda_createPurchaseBatch" {
+  type             = "zip"
+  source_file     = "../src/lambda/purchase/create_purchase_batch.py"
+  output_path      = "../build/lambdas/create_purchase_batch.zip"
+}
+

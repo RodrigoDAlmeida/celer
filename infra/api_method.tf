@@ -226,3 +226,10 @@ resource "aws_api_gateway_method" "api_method_list_purchase_view" {
   http_method   = "GET"
   authorization = "NONE"
 }
+
+resource "aws_api_gateway_method" "api_method_create_purchase_batch" {
+  rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
+  resource_id   = aws_api_gateway_resource.api_proxy_purchase_create_batch.id
+  http_method   = "POST"
+  authorization = "NONE"
+}

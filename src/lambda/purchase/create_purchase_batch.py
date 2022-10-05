@@ -4,17 +4,20 @@ import purchase_service
 
 def lambda_handler(event, context):
     body = json.loads(event.get('body'))
-    product_model_id = body.get('product_model_id')
     order_id = int(body.get('order_id'))
-    quantity = int(body.get('quantity'))
+    product_id = body.get('product_id')
+    product_name = body.get('product_name')
+    company_abbreviation = body.get('company_abbreviation')
+    purchases = body.get('purchases')
 
     try:
-        new_purchase = purchase_service.create(product_model_id, order_id, quantity)
-        status_code = 201 if new_purchase is not None else 500
+        output = purchase_service.create_purchase_batch(order_id, product_id, product_name,
+                                                        company_abbreviation, purchases)
+        status_code = 201 if output is not None else 500
     except Exception as e:
         return{'statusCode': 400, 'body': str(e)}
 
     return {
         'statusCode': status_code,
-        'body': json.dumps(new_purchase.toDict())
+        'body': json.dumps(output, ensure_ascii=False).encode('utf8').decode()
     }

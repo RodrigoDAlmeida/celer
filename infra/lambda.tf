@@ -365,3 +365,14 @@ resource "aws_lambda_function" "lambda_list_purchase_view" {
   layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }
+
+resource "aws_lambda_function" "lambda_create_purchase_batch" {
+  function_name = "celer-purchase-create-batch"
+  filename         = data.archive_file.file_lambda_createPurchaseBatch.output_path
+  source_code_hash = data.archive_file.file_lambda_createPurchaseBatch.output_base64sha256
+  role    = aws_iam_role.lambda-role.arn
+  handler = "create_purchase_batch.lambda_handler"
+  runtime = var.python_version
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
+  tags = {"App":"celer"}
+}

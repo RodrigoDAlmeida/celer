@@ -55,13 +55,6 @@ def list_purchase_view_by_order_id(order_id):
                             product['company_abbreviation'])
         purchases_view.append(view.toDict())
 
-        #create_purchase_batch(1, "068e975592a644fe9f0b451918b9e07f", "Chapa de fogão", "B",
-        #                      [{"product_model_id": "2474d65c099a4e5e9eadf6997902a32d",
-        #                        "product_model_name": "3F com redução",
-        #                        "quantity": 3,
-        #                        "purchase_price": 5.23,
-        #                        "sale_price": 8.99}])
-
     return purchases_view
 
 
