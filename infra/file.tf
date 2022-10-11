@@ -6,6 +6,12 @@ data "archive_file" "file_service_lambda_layer" {
   output_path      = "../build/service_lambda_layer.zip"
 }
 
+data "archive_file" "file_dynamo_repository_lambda_layer" {
+  type             = "zip"
+  source_dir     = "../src/layer/dynamo_repository/"
+  output_path      = "../build/dynamo_repository.zip"
+}
+
 data "archive_file" "file_util_lambda_layer" {
   type             = "zip"
   source_dir     = "../src/layer/util/"

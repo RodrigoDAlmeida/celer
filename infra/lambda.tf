@@ -12,6 +12,13 @@ resource "aws_lambda_layer_version" "service_lambda_layer" {
   compatible_runtimes = [var.python_version]
 }
 
+resource "aws_lambda_layer_version" "dynamo_repository_lambda_layer" {
+  filename         = data.archive_file.file_dynamo_repository_lambda_layer.output_path
+  source_code_hash = data.archive_file.file_dynamo_repository_lambda_layer.output_base64sha256
+  layer_name = "celer-dynamo-repository"
+  compatible_runtimes = [var.python_version]
+}
+
 resource "aws_lambda_layer_version" "util_lambda_layer" {
   filename         = data.archive_file.file_util_lambda_layer.output_path
   source_code_hash = data.archive_file.file_util_lambda_layer.output_base64sha256
@@ -28,7 +35,7 @@ resource "aws_lambda_function" "lambda_create_user" {
   role    = aws_iam_role.lambda-role.arn
   handler = "create_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 

@@ -1,5 +1,5 @@
 from repository import order_repository
-from repository import user_repository
+from src.layer.dynamo_repository.python import user_dynamo_repository
 from model.Order import Order, Status
 
 
