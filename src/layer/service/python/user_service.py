@@ -9,8 +9,8 @@ class UserService:
     def create(self, name, login, password):
         new_user = User(name, login, password)
         self.check_login(new_user)
-        self.user_repository.put_item(new_user)
-        return new_user
+        response = self.user_repository.put_item(new_user)
+        return new_user if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 
     def get_by_id(self, user_id):
         return self.user_repository.get(user_id)

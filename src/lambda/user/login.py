@@ -1,11 +1,15 @@
 import json
-import user_service
+from user_service import UserService
+from user_dynamo_repository import UserRepository
 
 
 def lambda_handler(event, context):
     body = json.loads(event.get('body'))
     user_login = body.get('login')
     user_password = body.get('password')
+
+    user_repository = UserRepository()
+    user_service = UserService(user_repository)
 
     try:
         user = user_service.do_login(user_login, user_password)

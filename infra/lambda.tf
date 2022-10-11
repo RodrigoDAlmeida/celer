@@ -46,7 +46,7 @@ resource "aws_lambda_function" "lambda_get_user" {
   role    = aws_iam_role.lambda-role.arn
   handler = "get_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -57,7 +57,7 @@ resource "aws_lambda_function" "lambda_list_users" {
   role    = aws_iam_role.lambda-role.arn
   handler = "list_users.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -68,7 +68,7 @@ resource "aws_lambda_function" "lambda_login" {
   role    = aws_iam_role.lambda-role.arn
   handler = "login.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -79,7 +79,7 @@ resource "aws_lambda_function" "lambda_deleteUser" {
   role    = aws_iam_role.lambda-role.arn
   handler = "delete_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -90,7 +90,7 @@ resource "aws_lambda_function" "lambda_update_user" {
   role    = aws_iam_role.lambda-role.arn
   handler = "update_user.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 #Company

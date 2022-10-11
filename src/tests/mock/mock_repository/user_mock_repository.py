@@ -8,17 +8,8 @@ class UserRepository:
                 'ResponseMetadata':
                     {
                         'RequestId': 'N5VLFEGHQCBTQDE8T1NVH2TCANOIUAHSD987123OID',
-                        'HTTPStatusCode': 200,
-                        'RetryAttempts': 0,
-                        'HTTPHeaders': {'server': 'Server',
-                                        'date': 'Tue, 11 Oct 2022 11:21:13 GMT',
-                                        'content-type': 'application/x-amz-json-1.0',
-                                        'content-length': '2',
-                                        'connection': 'keep-alive',
-                                        'x-amzn-requestid': 'JDSOIOIAS7JDSOI6512SD9SDIOJ',
-                                        'x-amz-crc32': '4745646764321'
-                                        }
-
+                        'HTTPStatusCode': 500,
+                        'RetryAttempts': 0
                     }
             }
         else:
@@ -26,28 +17,49 @@ class UserRepository:
                 'ResponseMetadata':
                     {
                         'RequestId': 'NHJG1293IDS123954AD1230DOIASD12521as',
-                        'HTTPStatusCode': 500,
-                        'RetryAttempts': 2,
-                        'HTTPHeaders': {'server': 'Server',
-                                        'date': 'Tue, 11 Oct 2022 11:21:13 GMT',
-                                        'content-type': 'application/x-amz-json-1.0',
-                                        'content-length': '2',
-                                        'connection': 'keep-alive',
-                                        'x-amzn-requestid': 'DJFOSD01239DOSD2',
-                                        'x-amz-crc32': '4745646764321'
-                                        }
-
+                        'HTTPStatusCode': 200,
+                        'RetryAttempts': 2
                     }
             }
 
     def get(self, id):
-        pass
+        if id == "01ffaccf684640ef95bcc6e2904778a6":
+            return {"active": True, "password": "horseee", "login": "joel",
+                    "last_login": "2022-10-11T11:07:18.934595", "id": "01ffaccf684640ef95bcc6e2904778a6",
+                    "name": "Joel"}
+        else:
+            return None
 
     def scan(self):
-        pass
+        return [{"active": True, "password": "horseee", "login": "elliee", "last_login": "2022-10-11T11:07:18.934595",
+                 "id": "54ffaccf684640ef95bcc6e2904778a6", "name": "Joel"},
+                {"active": True, "password": "555555", "login": "rodrigo", "last_login": "2022-09-30T08:34:07.945081",
+                 "id": "bf64924708334d9ca8f27d19e124079d", "name": "Rodrigo"}]
 
     def delete_item(self, id):
-        pass
+        if id == "01ffaccf684640ef95bcc6e2904778a6":
+            return {
+                'ResponseMetadata':
+                {
+                    'RequestId': 'NHJG1293IDS123954AD1230DOIASD12521AS',
+                    'HTTPStatusCode': 200,
+                    'RetryAttempts': 0,
+                }
+            }
+        else:
+            return {
+                'ResponseMetadata':
+                {
+                    'RequestId': 'OPIISDASDASD12521ASF2AS4FOAS9230123JA',
+                    'HTTPStatusCode': 501,
+                    'RetryAttempts': 0,
+                }
+            }
 
     def get_by_login(self, login):
-        pass
+        if login == "abby9":
+            return {"active": False, "password": "oldcoins", "login": "abby9",
+                    "last_login": "2022-07-11T11:07:18.934595", "id": "54ffaccf684640ef95bcc6e2904778a6",
+                    "name": "Abby"}
+        else:
+            return None
