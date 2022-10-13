@@ -12,6 +12,15 @@ class UserRepository:
                         'RetryAttempts': 0
                     }
             }
+        elif user.name == 'Elena':
+            return {
+                'ResponseMetadata':
+                    {
+                        'RequestId': 'OIASD12983HSAD09AWJSDAWW',
+                        'HTTPStatusCode': 500,
+                        'RetryAttempts': 11
+                    }
+            }
         else:
             return {
                 'ResponseMetadata':
@@ -27,6 +36,10 @@ class UserRepository:
             return {"active": True, "password": "horseee", "login": "joel",
                     "last_login": "2022-10-11T11:07:18.934595", "id": "01ffaccf684640ef95bcc6e2904778a6",
                     "name": "Joel"}
+        elif id == "02ffcf6846c6e29c785bc047940efaa6":
+            return {"active": True, "password": "crashban", "login": "elena",
+                    "last_login": "2022-10-11T11:07:18.934595", "id": "02ffcf6846c6e29c785bc047940efaa6",
+                    "name": "Elena"}
         else:
             return None
 

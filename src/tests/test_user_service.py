@@ -88,4 +88,18 @@ def test_update_user_successfully(mock_repository):
     assert user.active
 
 
+def test_update_user_failed(mock_repository):
+    user_service = UserService(mock_repository)
+    with pytest.raises(Exception):
+        user_service.update("Ryan", 'ryan77', 'bladernr', "2022-01-22T11:07:18.934595", True, '999xxccf684640ef95bcc6e2904778a6')
+
+
+def test_update_user_failed(mock_repository):
+    user_service = UserService(mock_repository)
+    response = user_service.update("Elena", 'elena-jornal', 'crashban', "2022-02-01T11:07:18.934595", True, '02ffcf6846c6e29c785bc047940efaa6')
+    assert 500 == response.get('ResponseMetadata').get('HTTPStatusCode')
+
+
+
+
 
