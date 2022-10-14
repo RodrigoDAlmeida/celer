@@ -1,7 +1,10 @@
-import order_service
+from order_service import OrderService
+from order_dynamo_repository import OrderRepository
 
 
 def lambda_handler(event, context):
+    order_repository = OrderRepository()
+    order_service = OrderService(order_repository, None)
     try:
         order_id = event.get('pathParameters').get('id')
         success = order_service.remove(int(order_id))
