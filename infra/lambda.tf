@@ -270,7 +270,7 @@ resource "aws_lambda_function" "lambda_create_order" {
   role    = aws_iam_role.lambda-role.arn
   handler = "create_order.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -281,7 +281,7 @@ resource "aws_lambda_function" "lambda_delete_order" {
   role    = aws_iam_role.lambda-role.arn
   handler = "delete_order.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -292,7 +292,7 @@ resource "aws_lambda_function" "lambda_get_order" {
   role    = aws_iam_role.lambda-role.arn
   handler = "get_order.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -303,7 +303,7 @@ resource "aws_lambda_function" "lambda_list_order" {
   role    = aws_iam_role.lambda-role.arn
   handler = "list_order.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -314,7 +314,7 @@ resource "aws_lambda_function" "lambda_update_order" {
   role    = aws_iam_role.lambda-role.arn
   handler = "update_order.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
