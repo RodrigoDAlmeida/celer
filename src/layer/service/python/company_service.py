@@ -8,8 +8,8 @@ class CompanyService:
     def create(self, name, abbreviation, email):
         new_company = Company(name, abbreviation, email)
         self.check_abbreviation(new_company)
-        self.company_repository.put_item(new_company)
-        return new_company
+        response = self.company_repository.put_item(new_company)
+        return new_company if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 
     def get_by_id(self, company_id):
         return self.company_repository.get(company_id)

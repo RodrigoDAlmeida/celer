@@ -1,18 +1,18 @@
-class UserRepository:
+class CompanyRepository:
     def __init__(self):
         pass
 
-    def put_item(self, user):
-        if user.name == 'Jack':
+    def put_item(self, company):
+        if company.name == 'Microsoft':
             return {
                 'ResponseMetadata':
                     {
                         'RequestId': 'N5VLFEGHQCBTQDE8T1NVH2TCANOIUAHSD987123OID',
-                        'HTTPStatusCode': 500,
+                        'HTTPStatusCode': 200,
                         'RetryAttempts': 0
                     }
             }
-        elif user.name == 'Elena':
+        elif company.name == 'Gamespot':
             return {
                 'ResponseMetadata':
                     {
@@ -33,21 +33,22 @@ class UserRepository:
 
     def get(self, id):
         if id == "01ffaccf684640ef95bcc6e2904778a6":
-            return {"active": True, "password": "horseee", "login": "joel",
-                    "last_login": "2022-10-11T11:07:18.934595", "id": "01ffaccf684640ef95bcc6e2904778a6",
-                    "name": "Joel"}
+            return {"id": "01ffaccf684640ef95bcc6e2904778a6",
+                    "name": "Apple", "abbreviation": "AP", "email": "pd@apple.com"}
         elif id == "02ffcf6846c6e29c785bc047940efaa6":
-            return {"active": True, "password": "crashban", "login": "elena",
-                    "last_login": "2022-10-11T11:07:18.934595", "id": "02ffcf6846c6e29c785bc047940efaa6",
-                    "name": "Elena"}
+            return {"id": "02ffcf6846c6e29c785bc047940efaa6",
+                    "name": "Google", "abbreviation": "GL", "email": "orders@google.com"}
+        elif id == "f68464001fe290ef9547faccbcc678a6":
+            return {"id": "f68464001fe290ef9547faccbcc678a6",
+                    "name": "Gamespot", "abbreviation": "GP", "email": "buying@gamespot.com"}
         else:
             return None
 
     def scan(self):
-        return [{"active": True, "password": "horseee", "login": "elliee", "last_login": "2022-10-11T11:07:18.934595",
-                 "id": "54ffaccf684640ef95bcc6e2904778a6", "name": "Joel"},
-                {"active": True, "password": "555555", "login": "rodrigo", "last_login": "2022-09-30T08:34:07.945081",
-                 "id": "bf64924708334d9ca8f27d19e124079d", "name": "Rodrigo"}]
+        return [{"id": "01ffaccf684640ef95bcc6e2904778a6",
+                 "name": "Apple", "abbreviation": "AP", "email": "pd@apple.com"},
+                {"id": "02ffcf6846c6e29c785bc047940efaa6",
+                 "name": "Google", "abbreviation": "GL", "email": "orders@google.com"}]
 
     def delete_item(self, id):
         if id == "01ffaccf684640ef95bcc6e2904778a6":
@@ -69,10 +70,9 @@ class UserRepository:
                     }
             }
 
-    def get_by_login(self, login):
-        if login == "abby9":
-            return {"active": False, "password": "oldcoins", "login": "abby9",
-                    "last_login": "2022-07-11T11:07:18.934595", "id": "54ffaccf684640ef95bcc6e2904778a6",
-                    "name": "Abby"}
+    def get_by_abbreviation(self, abbreviation):
+        if abbreviation == "DL":
+            return {"id": "03f6846cfc72a6f6ec9c940efa04785b",
+                    "name": "Dell", "abbreviation": "DL", "email": "buying@dell.com"}
         else:
             return None
