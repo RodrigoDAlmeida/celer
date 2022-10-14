@@ -1,5 +1,6 @@
 import json
-import company_service
+from company_service import CompanyService
+from company_dynamo_repository import CompanyRepository
 
 
 def lambda_handler(event, context):
@@ -8,6 +9,9 @@ def lambda_handler(event, context):
     name = body.get('name')
     abbreviation = body.get('abbreviation')
     email = body.get('email')
+
+    company_repository = CompanyRepository()
+    company_service = CompanyService(company_repository)
 
     try:
         user = company_service.update(name, abbreviation, email, company_id)

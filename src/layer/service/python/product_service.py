@@ -1,5 +1,5 @@
 from repository import product_repository
-from repository import company_repository
+from src.layer.dynamo_repository.python import company_dynamo_repository
 from model.Product import Product
 
 
