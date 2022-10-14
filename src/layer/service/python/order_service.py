@@ -10,8 +10,8 @@ class OrderService:
         self.check_user_id(user_id)
         order_id = self.get_next_order_id()
         new_order = Order(order_id, user_id, description)
-        self.order_repository.put_item(new_order)
-        return new_order
+        response = self.order_repository.put_item(new_order)
+        return new_order if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 
     def get_by_id(self, order_id):
         order = self.order_repository.get(order_id)
@@ -42,7 +42,7 @@ class OrderService:
 
     def check_exists(self, order_id):
         if not self.get_by_id(order_id):
-            raise Exception('product model {} not found'.format(order_id))
+            raise Exception('order {} not found'.format(order_id))
 
     def check_user_id(self, user_id):
         user = self.user_repository.get(user_id)

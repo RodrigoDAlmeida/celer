@@ -1,6 +1,6 @@
 import sys
 import pytest
-from _pytest import mark
+from datetime import datetime, timedelta
 
 sys.path.append(sys.path[0] + "\\src\\layer\\service\\python")
 sys.path.append(sys.path[0] + "\\src\\tests")
@@ -14,12 +14,14 @@ def user_service():
 
 
 def test_create_user_successfully(user_service):
+    date_yesterday = datetime.now() + timedelta(days=-1)
     new_user = user_service.create('Natan', 'ntndrake', '56516asd15')
     assert 'Natan' == new_user.name
     assert 'ntndrake' == new_user.login
     assert '56516asd15' == new_user.password
     assert 32 == len(new_user.id)
     assert new_user.active
+    assert datetime.fromisoformat(new_user.last_login) > date_yesterday
 
 
 def test_create_user_failed(user_service):
@@ -58,6 +60,7 @@ def test_get_by_login_successfully(user_service):
     assert user.get('password') == 'oldcoins'
     assert len(user.get('id')) == 32
     assert not user.get('active')
+    assert user.get('last_login') == '2022-07-11T11:07:18.934595'
 
 
 def test_get_by_login_failed(user_service):
@@ -98,12 +101,14 @@ def test_update_user_failed(user_service):
 
 
 def test_login_successfully(user_service):
+    date_yesterday = datetime.now() + timedelta(days=-1)
     user = user_service.do_login("abby9", 'oldcoins')
     assert user.name == 'Abby'
     assert user.login == 'abby9'
     assert user.password == 'oldcoins'
     assert len(user.id) == 32
     assert not user.active
+    assert datetime.fromisoformat(user.last_login) > date_yesterday
 
 
 def test_login_failed_not_found(user_service):

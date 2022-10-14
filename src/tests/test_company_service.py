@@ -25,7 +25,7 @@ def test_create_company_failed(company_service):
     assert output.get('ResponseMetadata').get('HTTPStatusCode') == 500
 
 
-def test_delete_company_fail_abbreviation_already_in_use(company_service):
+def test_create_company_fail_abbreviation_already_in_use(company_service):
     with pytest.raises(Exception):
         company_service.create('Dallas', 'DL', 'buy@dallas.com')
 
