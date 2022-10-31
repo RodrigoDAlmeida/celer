@@ -102,7 +102,7 @@ resource "aws_lambda_function" "lambda_create_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "create_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -113,7 +113,7 @@ resource "aws_lambda_function" "lambda_delete_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "delete_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -124,7 +124,7 @@ resource "aws_lambda_function" "lambda_get_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "get_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -135,7 +135,7 @@ resource "aws_lambda_function" "lambda_list_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "list_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 
@@ -146,7 +146,7 @@ resource "aws_lambda_function" "lambda_update_company" {
   role    = aws_iam_role.lambda-role.arn
   handler = "update_company.lambda_handler"
   runtime = var.python_version
-  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn]
+  layers = [aws_lambda_layer_version.service_lambda_layer.arn, aws_lambda_layer_version.dynamo_repository_lambda_layer.arn, aws_lambda_layer_version.util_lambda_layer.arn]
   tags = {"App":"celer"}
 }
 

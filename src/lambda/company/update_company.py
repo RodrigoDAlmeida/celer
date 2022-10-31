@@ -1,4 +1,5 @@
 import json
+import responser
 from company_service import CompanyService
 from company_dynamo_repository import CompanyRepository
 
@@ -17,9 +18,6 @@ def lambda_handler(event, context):
         user = company_service.update(name, abbreviation, email, company_id)
         status_code = 200 if user is not None else 500
     except Exception as e:
-        return {'statusCode': 400, 'body': str(e)}
+        return responser.build(400, str(e))
 
-    return {
-        'statusCode': status_code,
-        'body': json.dumps(user.toDict())
-    }
+    responser.build(status_code, json.dumps(user.toDict()))
