@@ -50,7 +50,6 @@ def list_purchase_view_by_order_id(order_id):
                             product_model['name'],
                             product_model['product_id'],
                             product_model['purchase_price'],
-                            product_model['sale_price'],
                             product['name'],
                             product['company_abbreviation'])
         purchases_view.append(view.toDict())
@@ -74,8 +73,7 @@ def create_purchase_batch(order_id, product_id, product_name, company_abbreviati
         if not product_model_id or product_model_id == '':
             new_product_model = ProductModel(purchase['product_model_name'],
                                              product_id,
-                                             purchase['purchase_price'],
-                                             purchase['sale_price'])
+                                             purchase['purchase_price'])
             product_model_repository.put_item(new_product_model)
             included_products_models.append(new_product_model.toDict())
             product_model_id = new_product_model.id
@@ -90,7 +88,6 @@ def create_purchase_batch(order_id, product_id, product_name, company_abbreviati
                                      purchase['product_model_name'],
                                      product_id,
                                      purchase['purchase_price'],
-                                     purchase['sale_price'],
                                      product_name,
                                      company_abbreviation)
 

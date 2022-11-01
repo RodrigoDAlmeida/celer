@@ -3,9 +3,9 @@ from repository import product_repository
 from model.ProductModel import ProductModel
 
 
-def create(name, product_id, purchase_price, sale_price):
+def create(name, product_id, purchase_price):
     check_product_id(product_id)
-    new_product_model = ProductModel(name, product_id, purchase_price, sale_price)
+    new_product_model = ProductModel(name, product_id, purchase_price)
     product_model_repository.put_item(new_product_model)
     return new_product_model
 
@@ -27,10 +27,10 @@ def remove(product_model_id):
     return response.get('ResponseMetadata').get('HTTPStatusCode') == 200
 
 
-def update(name, product_id, purchase_price, sale_price, product_model_id):
+def update(name, product_id, purchase_price, product_model_id):
     check_exists(product_model_id)
     check_product_id(product_id)
-    product_model = ProductModel(name, product_id,  purchase_price, sale_price, product_model_id)
+    product_model = ProductModel(name, product_id,  purchase_price, product_model_id)
     response = product_model_repository.put_item(product_model)
     return product_model if response.get('ResponseMetadata').get('HTTPStatusCode') == 200 else response
 

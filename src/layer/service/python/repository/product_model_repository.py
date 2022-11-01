@@ -12,8 +12,7 @@ def put_item(product_model):
             'id': product_model.id,
             'name': product_model.name,
             'product_id': product_model.product_id,
-            'purchase_price': Decimal(str(product_model.purchase_price)),
-            'sale_price': Decimal(str(product_model.sale_price))
+            'purchase_price': Decimal(str(product_model.purchase_price))
         }
     )
     return response
