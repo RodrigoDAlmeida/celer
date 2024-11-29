@@ -1,0 +1,3547 @@
+{
+  "perguntas": [
+    {
+      "id": 1,
+      "pergunta": "Qual é a capital do Brasil?",
+      "opcoes": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Brasília",
+        "Belo Horizonte"
+      ],
+      "resposta_correta": "Brasília",
+      "dificuldade": "muito fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 2,
+      "pergunta": "Em que ano o Brasil foi descoberto?",
+      "opcoes": [
+        "1500",
+        "1498",
+        "1600",
+        "1492"
+      ],
+      "resposta_correta": "1500",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual o elemento químico com símbolo 'O'?",
+      "opcoes": [
+        "Ouro",
+        "Oxigênio",
+        "Osmium",
+        "Ósmio"
+      ],
+      "resposta_correta": "Oxigênio",
+      "dificuldade": "muito fácil",
+      "categoria": "Ciência"
+    },
+    {
+      "id": 4,
+      "pergunta": "Quem pintou 'Guernica'?",
+      "opcoes": [
+        "Pablo Picasso",
+        "Vincent van Gogh",
+        "Salvador Dalí",
+        "Claude Monet"
+      ],
+      "resposta_correta": "Pablo Picasso",
+      "dificuldade": "fácil",
+      "categoria": "Arte"
+    },
+    {
+      "id": 5,
+      "pergunta": "Qual é a fórmula química da água?",
+      "opcoes": [
+        "H2O",
+        "CO2",
+        "O2",
+        "H2O2"
+      ],
+      "resposta_correta": "H2O",
+      "dificuldade": "muito fácil",
+      "categoria": "Ciência"
+    },
+    {
+      "id": 6,
+      "pergunta": "Qual é o maior planeta do sistema solar?",
+      "opcoes": [
+        "Júpiter",
+        "Saturno",
+        "Terra",
+        "Urano"
+      ],
+      "resposta_correta": "Júpiter",
+      "dificuldade": "média",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 7,
+      "pergunta": "Quem foi o primeiro presidente do Brasil?",
+      "opcoes": [
+        "Getúlio Vargas",
+        "Juscelino Kubitschek",
+        "Deodoro da Fonseca",
+        "Washington Luís"
+      ],
+      "resposta_correta": "Deodoro da Fonseca",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 8,
+      "pergunta": "Qual é o animal terrestre mais rápido do mundo?",
+      "opcoes": [
+        "Leão",
+        "Guepardo",
+        "Cavalo",
+        "Antílope"
+      ],
+      "resposta_correta": "Guepardo",
+      "dificuldade": "fácil",
+      "categoria": "Animais"
+    },
+    {
+      "id": 9,
+      "pergunta": "Em que ano ocorreu a Primeira Guerra Mundial?",
+      "opcoes": [
+        "1914-1918",
+        "1900-1905",
+        "1939-1945",
+        "1920-1924"
+      ],
+      "resposta_correta": "1914-1918",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 10,
+      "pergunta": "Qual o maior oceano do planeta?",
+      "opcoes": [
+        "Atlântico",
+        "Pacífico",
+        "Índico",
+        "Ártico"
+      ],
+      "resposta_correta": "Pacífico",
+      "dificuldade": "muito fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 11,
+      "pergunta": "Quem escreveu 'Dom Quixote'?",
+      "opcoes": [
+        "Jorge Luis Borges",
+        "Gabriel García Márquez",
+        "Miguel de Cervantes",
+        "José Saramago"
+      ],
+      "resposta_correta": "Miguel de Cervantes",
+      "dificuldade": "média",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 12,
+      "pergunta": "Qual é o símbolo químico do Ouro?",
+      "opcoes": [
+        "Au",
+        "Ag",
+        "O",
+        "H"
+      ],
+      "resposta_correta": "Au",
+      "dificuldade": "muito fácil",
+      "categoria": "Ciência"
+    },
+    {
+      "id": 13,
+      "pergunta": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "opcoes": [
+        "1969",
+        "1971",
+        "1965",
+        "1970"
+      ],
+      "resposta_correta": "1969",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 14,
+      "pergunta": "Qual foi o primeiro computador eletrônico?",
+      "opcoes": [
+        "ENIAC",
+        "Apple I",
+        "IBM 701",
+        "UNIVAC"
+      ],
+      "resposta_correta": "ENIAC",
+      "dificuldade": "difícil",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 15,
+      "pergunta": "Qual país é conhecido como 'A terra do sol nascente'?",
+      "opcoes": [
+        "China",
+        "Coreia do Sul",
+        "Japão",
+        "Tailândia"
+      ],
+      "resposta_correta": "Japão",
+      "dificuldade": "muito fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 16,
+      "pergunta": "Qual foi o primeiro satélite artificial lançado ao espaço?",
+      "opcoes": [
+        "Sputnik 1",
+        "Apollo 11",
+        "Hubble",
+        "Venera 1"
+      ],
+      "resposta_correta": "Sputnik 1",
+      "dificuldade": "média",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 17,
+      "pergunta": "Quem foi o último imperador do Brasil?",
+      "opcoes": [
+        "Pedro II",
+        "Dom João VI",
+        "Dom Pedro I",
+        "D. Maria II"
+      ],
+      "resposta_correta": "Pedro II",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 18,
+      "pergunta": "Qual é o nome do maior deserto do mundo?",
+      "opcoes": [
+        "Sahara",
+        "Kalahari",
+        "Gobi",
+        "Antártico"
+      ],
+      "resposta_correta": "Antártico",
+      "dificuldade": "difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 19,
+      "pergunta": "Qual é a fórmula da gravidade?",
+      "opcoes": [
+        "F = m * a",
+        "F = G * (m1 * m2) / r^2",
+        "E = mc^2",
+        "V = R * I"
+      ],
+      "resposta_correta": "F = G * (m1 * m2) / r^2",
+      "dificuldade": "muito difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 20,
+      "pergunta": "Quem foi o inventor da lâmpada elétrica?",
+      "opcoes": [
+        "Nikola Tesla",
+        "Thomas Edison",
+        "Alexander Graham Bell",
+        "James Watt"
+      ],
+      "resposta_correta": "Thomas Edison",
+      "dificuldade": "fácil",
+      "categoria": "Invenções"
+    },
+    {
+      "id": 21,
+      "pergunta": "Quantos estados o Brasil possui?",
+      "opcoes": [
+        "26",
+        "25",
+        "27",
+        "28"
+      ],
+      "resposta_correta": "26",
+      "dificuldade": "muito fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 22,
+      "pergunta": "Quem pintou a Mona Lisa?",
+      "opcoes": [
+        "Vincent van Gogh",
+        "Leonardo da Vinci",
+        "Pablo Picasso",
+        "Claude Monet"
+      ],
+      "resposta_correta": "Leonardo da Vinci",
+      "dificuldade": "fácil",
+      "categoria": "Arte"
+    },
+    {
+      "id": 23,
+      "pergunta": "Qual o maior animal terrestre do planeta?",
+      "opcoes": [
+        "Elefante Africano",
+        "Girafa",
+        "Búfalo",
+        "Hipopótamo"
+      ],
+      "resposta_correta": "Elefante Africano",
+      "dificuldade": "fácil",
+      "categoria": "Animais"
+    },
+    {
+      "id": 24,
+      "pergunta": "O que é a fotossíntese?",
+      "opcoes": [
+        "A conversão de luz solar em energia elétrica",
+        "A conversão de luz solar em energia química pelas plantas",
+        "O processo de respiração das plantas",
+        "A absorção de água pelas raízes"
+      ],
+      "resposta_correta": "A conversão de luz solar em energia química pelas plantas",
+      "dificuldade": "média",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 25,
+      "pergunta": "Quem foi o líder da Revolução Russa de 1917?",
+      "opcoes": [
+        "Vladimir Lenin",
+        "Joseph Stalin",
+        "Leon Trotsky",
+        "Mikhail Gorbachev"
+      ],
+      "resposta_correta": "Vladimir Lenin",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 26,
+      "pergunta": "Em que país foi inventado o futebol?",
+      "opcoes": [
+        "Brasil",
+        "Inglaterra",
+        "Alemanha",
+        "Argentina"
+      ],
+      "resposta_correta": "Inglaterra",
+      "dificuldade": "fácil",
+      "categoria": "Esportes"
+    },
+    {
+      "id": 27,
+      "pergunta": "Qual é a fórmula química do gás carbônico?",
+      "opcoes": [
+        "CO2",
+        "CO",
+        "O2",
+        "H2O"
+      ],
+      "resposta_correta": "CO2",
+      "dificuldade": "muito fácil",
+      "categoria": "Química"
+    },
+    {
+      "id": 28,
+      "pergunta": "Qual o nome da primeira mulher a viajar para o espaço?",
+      "opcoes": [
+        "Valentina Tereshkova",
+        "Sally Ride",
+        "Mae Jemison",
+        "Eileen Collins"
+      ],
+      "resposta_correta": "Valentina Tereshkova",
+      "dificuldade": "média",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 29,
+      "pergunta": "Quem foi o autor de 'O Senhor dos Anéis'?",
+      "opcoes": [
+        "George R. R. Martin",
+        "J. K. Rowling",
+        "J. R. R. Tolkien",
+        "C. S. Lewis"
+      ],
+      "resposta_correta": "J. R. R. Tolkien",
+      "dificuldade": "fácil",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 30,
+      "pergunta": "Qual é o nome do maior rio do mundo?",
+      "opcoes": [
+        "Rio Amazonas",
+        "Rio Nilo",
+        "Rio Yangtzé",
+        "Rio Mississippi"
+      ],
+      "resposta_correta": "Rio Amazonas",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 31,
+      "pergunta": "Qual foi a primeira grande guerra mundial?",
+      "opcoes": [
+        "Primeira Guerra Mundial",
+        "Segunda Guerra Mundial",
+        "Guerra Civil Americana",
+        "Guerra do Vietnã"
+      ],
+      "resposta_correta": "Primeira Guerra Mundial",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 32,
+      "pergunta": "Qual é o maior oceano do planeta?",
+      "opcoes": [
+        "Atlântico",
+        "Pacífico",
+        "Índico",
+        "Ártico"
+      ],
+      "resposta_correta": "Pacífico",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 33,
+      "pergunta": "Quem inventou a lâmpada elétrica?",
+      "opcoes": [
+        "Nikola Tesla",
+        "Thomas Edison",
+        "Alexander Graham Bell",
+        "Galileu Galilei"
+      ],
+      "resposta_correta": "Thomas Edison",
+      "dificuldade": "fácil",
+      "categoria": "Invenções"
+    },
+    {
+      "id": 34,
+      "pergunta": "Qual é o nome da teoria que explica a origem do universo?",
+      "opcoes": [
+        "Teoria da Evolução",
+        "Teoria do Big Bang",
+        "Teoria da Relatividade",
+        "Teoria da Gravitação Universal"
+      ],
+      "resposta_correta": "Teoria do Big Bang",
+      "dificuldade": "média",
+      "categoria": "Ciência"
+    },
+    {
+      "id": 35,
+      "pergunta": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "opcoes": [
+        "1965",
+        "1969",
+        "1971",
+        "1959"
+      ],
+      "resposta_correta": "1969",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 36,
+      "pergunta": "Qual foi o primeiro país a conquistar a independência das colônias espanholas na América Latina?",
+      "opcoes": [
+        "Brasil",
+        "Argentina",
+        "México",
+        "Haiti"
+      ],
+      "resposta_correta": "Haiti",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 37,
+      "pergunta": "Qual é o nome da partícula subatômica com carga negativa?",
+      "opcoes": [
+        "Próton",
+        "Nêutron",
+        "Elétron",
+        "Neutrino"
+      ],
+      "resposta_correta": "Elétron",
+      "dificuldade": "média",
+      "categoria": "Física"
+    },
+    {
+      "id": 38,
+      "pergunta": "Quem foi o primeiro imperador romano?",
+      "opcoes": [
+        "Júlio César",
+        "Augusto",
+        "Nero",
+        "Constantino"
+      ],
+      "resposta_correta": "Augusto",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 39,
+      "pergunta": "Qual é o nome do primeiro computador eletrônico de grande escala?",
+      "opcoes": [
+        "ENIAC",
+        "UNIVAC",
+        "IBM 701",
+        "Colossus"
+      ],
+      "resposta_correta": "ENIAC",
+      "dificuldade": "difícil",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 40,
+      "pergunta": "Quem foi o físico responsável pela teoria da relatividade?",
+      "opcoes": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Niels Bohr",
+        "Galileu Galilei"
+      ],
+      "resposta_correta": "Albert Einstein",
+      "dificuldade": "fácil",
+      "categoria": "Física"
+    },
+    {
+      "id": 41,
+      "pergunta": "Qual é o elemento químico com símbolo 'Na'?",
+      "opcoes": [
+        "Nítrogênio",
+        "Sódio",
+        "Neônio",
+        "Nióbio"
+      ],
+      "resposta_correta": "Sódio",
+      "dificuldade": "fácil",
+      "categoria": "Química"
+    },
+    {
+      "id": 42,
+      "pergunta": "Quem foi o inventor do telefone?",
+      "opcoes": [
+        "Nikola Tesla",
+        "Thomas Edison",
+        "Graham Bell",
+        "Alexander Graham Bell"
+      ],
+      "resposta_correta": "Alexander Graham Bell",
+      "dificuldade": "fácil",
+      "categoria": "Invenções"
+    },
+    {
+      "id": 43,
+      "pergunta": "Qual é o maior órgão do corpo humano?",
+      "opcoes": [
+        "Coração",
+        "Cérebro",
+        "Fígado",
+        "Pele"
+      ],
+      "resposta_correta": "Pele",
+      "dificuldade": "média",
+      "categoria": "Anatomia"
+    },
+    {
+      "id": 44,
+      "pergunta": "Qual é a moeda oficial do Japão?",
+      "opcoes": [
+        "Yuan",
+        "Won",
+        "Yen",
+        "Ringgit"
+      ],
+      "resposta_correta": "Yen",
+      "dificuldade": "muito fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 45,
+      "pergunta": "Quem é conhecido como o 'Pai da Psicanálise'?",
+      "opcoes": [
+        "Carl Jung",
+        "Sigmund Freud",
+        "Erik Erikson",
+        "Alfred Adler"
+      ],
+      "resposta_correta": "Sigmund Freud",
+      "dificuldade": "fácil",
+      "categoria": "Psicologia"
+    },
+    {
+      "id": 46,
+      "pergunta": "Em que ano o Brasil ganhou sua primeira Copa do Mundo de Futebol?",
+      "opcoes": [
+        "1958",
+        "1962",
+        "1949",
+        "1970"
+      ],
+      "resposta_correta": "1958",
+      "dificuldade": "fácil",
+      "categoria": "Esportes"
+    },
+    {
+      "id": 47,
+      "pergunta": "Qual é a capital da Alemanha?",
+      "opcoes": [
+        "Munique",
+        "Berlim",
+        "Hamburgo",
+        "Frankfurt"
+      ],
+      "resposta_correta": "Berlim",
+      "dificuldade": "muito fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 48,
+      "pergunta": "O que significa a sigla 'ONU'?",
+      "opcoes": [
+        "Organização Nacional Unida",
+        "Organização das Nações Unidas",
+        "Organização Nacional Unida",
+        "Organização das Nações Unidas"
+      ],
+      "resposta_correta": "Organização das Nações Unidas",
+      "dificuldade": "fácil",
+      "categoria": "Política Internacional"
+    },
+    {
+      "id": 49,
+      "pergunta": "Quem foi o autor de '1984'?",
+      "opcoes": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "H.G. Wells"
+      ],
+      "resposta_correta": "George Orwell",
+      "dificuldade": "média",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 50,
+      "pergunta": "Qual é o país com maior população do mundo?",
+      "opcoes": [
+        "Índia",
+        "Estados Unidos",
+        "Brasil",
+        "China"
+      ],
+      "resposta_correta": "China",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 51,
+      "pergunta": "Em que ano foi fundada a Organização das Nações Unidas (ONU)?",
+      "opcoes": [
+        "1945",
+        "1920",
+        "1950",
+        "1960"
+      ],
+      "resposta_correta": "1945",
+      "dificuldade": "fácil",
+      "categoria": "Política Internacional"
+    },
+    {
+      "id": 52,
+      "pergunta": "Qual é o elemento químico com símbolo 'Fe'?",
+      "opcoes": [
+        "Ferro",
+        "Flúor",
+        "Fósforo",
+        "Francium"
+      ],
+      "resposta_correta": "Ferro",
+      "dificuldade": "muito fácil",
+      "categoria": "Química"
+    },
+    {
+      "id": 53,
+      "pergunta": "Qual é o continente mais populoso do planeta?",
+      "opcoes": [
+        "África",
+        "América",
+        "Ásia",
+        "Europa"
+      ],
+      "resposta_correta": "Ásia",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 54,
+      "pergunta": "Qual é o maior continente do mundo em termos de área?",
+      "opcoes": [
+        "Ásia",
+        "América do Norte",
+        "África",
+        "Antártida"
+      ],
+      "resposta_correta": "Ásia",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 55,
+      "pergunta": "Qual é a principal função do sistema circulatório humano?",
+      "opcoes": [
+        "Transportar oxigênio",
+        "Realizar a digestão dos alimentos",
+        "Controlar os batimentos cardíacos",
+        "Absorver os nutrientes"
+      ],
+      "resposta_correta": "Transportar oxigênio",
+      "dificuldade": "média",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 56,
+      "pergunta": "Em que ano a Segunda Guerra Mundial terminou?",
+      "opcoes": [
+        "1945",
+        "1939",
+        "1950",
+        "1941"
+      ],
+      "resposta_correta": "1945",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 57,
+      "pergunta": "Quem foi o presidente dos Estados Unidos durante a maior parte da Segunda Guerra Mundial?",
+      "opcoes": [
+        "Franklin D. Roosevelt",
+        "Harry S. Truman",
+        "Dwight D. Eisenhower",
+        "Woodrow Wilson"
+      ],
+      "resposta_correta": "Franklin D. Roosevelt",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 58,
+      "pergunta": "Qual é o nome da partícula que transmite a força eletromagnética?",
+      "opcoes": [
+        "Fóton",
+        "Glúon",
+        "Bóson de Higgs",
+        "Elétron"
+      ],
+      "resposta_correta": "Fóton",
+      "dificuldade": "difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 59,
+      "pergunta": "O que é a teoria da relatividade restrita de Einstein?",
+      "opcoes": [
+        "A teoria da gravidade",
+        "A teoria da velocidade da luz",
+        "A teoria do movimento de partículas subatômicas",
+        "A teoria que descreve como as leis da física se aplicam a todos os observadores"
+      ],
+      "resposta_correta": "A teoria que descreve como as leis da física se aplicam a todos os observadores",
+      "dificuldade": "difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 60,
+      "pergunta": "Quem foi o criador da teoria do Big Bang?",
+      "opcoes": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Georges Lemaître",
+        "Stephen Hawking"
+      ],
+      "resposta_correta": "Georges Lemaître",
+      "dificuldade": "difícil",
+      "categoria": "Astronomia"
+    },
+     {
+      "id": 61,
+      "pergunta": "Qual é o nome do maior planeta do sistema solar?",
+      "opcoes": [
+        "Júpiter",
+        "Saturno",
+        "Netuno",
+        "Urano"
+      ],
+      "resposta_correta": "Júpiter",
+      "dificuldade": "fácil",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 62,
+      "pergunta": "Qual é o símbolo químico do oxigênio?",
+      "opcoes": [
+        "O",
+        "O2",
+        "Ox",
+        "Oy"
+      ],
+      "resposta_correta": "O",
+      "dificuldade": "muito fácil",
+      "categoria": "Química"
+    },
+    {
+      "id": 63,
+      "pergunta": "Quem escreveu a peça 'Romeu e Julieta'?",
+      "opcoes": [
+        "William Shakespeare",
+        "Oscar Wilde",
+        "J.K. Rowling",
+        "Charles Dickens"
+      ],
+      "resposta_correta": "William Shakespeare",
+      "dificuldade": "fácil",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 64,
+      "pergunta": "Qual é o maior deserto do mundo?",
+      "opcoes": [
+        "Deserto do Saara",
+        "Deserto de Gobi",
+        "Deserto da Arábia",
+        "Antártica"
+      ],
+      "resposta_correta": "Antártica",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 65,
+      "pergunta": "Em que ano o Titanic afundou?",
+      "opcoes": [
+        "1912",
+        "1898",
+        "1923",
+        "1931"
+      ],
+      "resposta_correta": "1912",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 66,
+      "pergunta": "Qual é o nome da maior cadeia montanhosa do mundo?",
+      "opcoes": [
+        "Himalaia",
+        "Andes",
+        "Rocky Mountains",
+        "Alpes"
+      ],
+      "resposta_correta": "Himalaia",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 67,
+      "pergunta": "O que é a teoria da evolução de Darwin?",
+      "opcoes": [
+        "A teoria da origem das estrelas",
+        "A teoria da mudança nas espécies ao longo do tempo",
+        "A teoria de que o universo é finito",
+        "A teoria sobre a formação da Terra"
+      ],
+      "resposta_correta": "A teoria da mudança nas espécies ao longo do tempo",
+      "dificuldade": "média",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 68,
+      "pergunta": "Qual é o país mais populoso da América do Sul?",
+      "opcoes": [
+        "Brasil",
+        "Argentina",
+        "Colômbia",
+        "Venezuela"
+      ],
+      "resposta_correta": "Brasil",
+      "dificuldade": "fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 69,
+      "pergunta": "Quem foi o primeiro presidente dos Estados Unidos?",
+      "opcoes": [
+        "George Washington",
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "Theodore Roosevelt"
+      ],
+      "resposta_correta": "George Washington",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 70,
+      "pergunta": "Qual é a principal causa da formação de buracos negros?",
+      "opcoes": [
+        "Supernovas",
+        "Ondas gravitacionais",
+        "Colisões de asteroides",
+        "Radiação cósmica"
+      ],
+      "resposta_correta": "Supernovas",
+      "dificuldade": "difícil",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 71,
+      "pergunta": "O que é a teoria da relatividade geral de Albert Einstein?",
+      "opcoes": [
+        "A teoria que explica a aceleração das partículas",
+        "A teoria que descreve a gravitação como uma curvatura do espaço-tempo",
+        "A teoria que descreve a mecânica quântica",
+        "A teoria que explica os buracos negros"
+      ],
+      "resposta_correta": "A teoria que descreve a gravitação como uma curvatura do espaço-tempo",
+      "dificuldade": "difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 72,
+      "pergunta": "Qual é o maior animal marinho do planeta?",
+      "opcoes": [
+        "Baleia Azul",
+        "Tubarão Branco",
+        "Baleia Jubarte",
+        "Orca"
+      ],
+      "resposta_correta": "Baleia Azul",
+      "dificuldade": "fácil",
+      "categoria": "Animais"
+    },
+    {
+      "id": 73,
+      "pergunta": "Quem pintou 'A Noite Estrelada'?",
+      "opcoes": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Claude Monet",
+        "Salvador Dalí"
+      ],
+      "resposta_correta": "Vincent van Gogh",
+      "dificuldade": "fácil",
+      "categoria": "Arte"
+    },
+    {
+      "id": 74,
+      "pergunta": "Qual é o nome do planeta que é conhecido como o 'planeta vermelho'?",
+      "opcoes": [
+        "Marte",
+        "Vênus",
+        "Júpiter",
+        "Saturno"
+      ],
+      "resposta_correta": "Marte",
+      "dificuldade": "fácil",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 75,
+      "pergunta": "Em que ano a União Soviética desmoronou?",
+      "opcoes": [
+        "1989",
+        "1991",
+        "1985",
+        "1979"
+      ],
+      "resposta_correta": "1991",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 76,
+      "pergunta": "Quem foi o responsável pela teoria da eletromagnetismo?",
+      "opcoes": [
+        "Isaac Newton",
+        "Michael Faraday",
+        "Albert Einstein",
+        "Nikola Tesla"
+      ],
+      "resposta_correta": "Michael Faraday",
+      "dificuldade": "difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 77,
+      "pergunta": "Qual é o nome da maior floresta tropical do mundo?",
+      "opcoes": [
+        "Floresta Amazônica",
+        "Floresta do Congo",
+        "Floresta de Borneo",
+        "Floresta de Taiga"
+      ],
+      "resposta_correta": "Floresta Amazônica",
+      "dificuldade": "fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 78,
+      "pergunta": "Quem descobriu a penicilina?",
+      "opcoes": [
+        "Marie Curie",
+        "Alexander Fleming",
+        "Louis Pasteur",
+        "Edward Jenner"
+      ],
+      "resposta_correta": "Alexander Fleming",
+      "dificuldade": "fácil",
+      "categoria": "Ciência"
+    },
+    {
+      "id": 79,
+      "pergunta": "Qual é o nome da teoria proposta por Charles Darwin sobre a origem das espécies?",
+      "opcoes": [
+        "Teoria da Gravitação Universal",
+        "Teoria da Evolução",
+        "Teoria do Big Bang",
+        "Teoria do Criacionismo"
+      ],
+      "resposta_correta": "Teoria da Evolução",
+      "dificuldade": "fácil",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 80,
+      "pergunta": "Qual é o número atômico do carbono?",
+      "opcoes": [
+        "6",
+        "8",
+        "12",
+        "14"
+      ],
+      "resposta_correta": "6",
+      "dificuldade": "muito fácil",
+      "categoria": "Química"
+    },
+
+    {
+      "id": 81,
+      "pergunta": "Quem foi o líder da Revolução Francesa?",
+      "opcoes": [
+        "Napoleão Bonaparte",
+        "Maximilien Robespierre",
+        "Louis XVI",
+        "Jean-Paul Marat"
+      ],
+      "resposta_correta": "Maximilien Robespierre",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 82,
+      "pergunta": "Qual é o maior continente do mundo?",
+      "opcoes": [
+        "África",
+        "Ásia",
+        "América do Norte",
+        "Europa"
+      ],
+      "resposta_correta": "Ásia",
+      "dificuldade": "muito fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 83,
+      "pergunta": "Quem é considerado o pai da psicanálise?",
+      "opcoes": [
+        "Carl Jung",
+        "Sigmund Freud",
+        "Alfred Adler",
+        "Erik Erikson"
+      ],
+      "resposta_correta": "Sigmund Freud",
+      "dificuldade": "fácil",
+      "categoria": "Psicologia"
+    },
+    {
+      "id": 84,
+      "pergunta": "Qual é o nome do processo de transformação da lagarta em borboleta?",
+      "opcoes": [
+        "Metamorfose",
+        "Fusão",
+        "Crescimento",
+        "Desenvolvimento"
+      ],
+      "resposta_correta": "Metamorfose",
+      "dificuldade": "média",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 85,
+      "pergunta": "Qual é o principal gás responsável pelo efeito estufa?",
+      "opcoes": [
+        "Metano",
+        "Dióxido de carbono",
+        "Óxidos de nitrogênio",
+        "Gás natural"
+      ],
+      "resposta_correta": "Dióxido de carbono",
+      "dificuldade": "média",
+      "categoria": "Ciência"
+    },
+    {
+      "id": 86,
+      "pergunta": "Qual é o nome da famosa teoria que explica a origem do universo?",
+      "opcoes": [
+        "Teoria do Big Bang",
+        "Teoria da Relatividade",
+        "Teoria da Evolução",
+        "Teoria da Gravitação Universal"
+      ],
+      "resposta_correta": "Teoria do Big Bang",
+      "dificuldade": "fácil",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 87,
+      "pergunta": "Qual é o nome do primeiro satélite artificial lançado pela União Soviética?",
+      "opcoes": [
+        "Sputnik 1",
+        "Apollo 11",
+        "Vostok 1",
+        "Hubble"
+      ],
+      "resposta_correta": "Sputnik 1",
+      "dificuldade": "fácil",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 88,
+      "pergunta": "Em que ano o Brasil se tornou independente de Portugal?",
+      "opcoes": [
+        "1822",
+        "1889",
+        "1500",
+        "1600"
+      ],
+      "resposta_correta": "1822",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 89,
+      "pergunta": "Quem escreveu 'O Senhor dos Anéis'?",
+      "opcoes": [
+        "J.K. Rowling",
+        "J.R.R. Tolkien",
+        "George R.R. Martin",
+        "C.S. Lewis"
+      ],
+      "resposta_correta": "J.R.R. Tolkien",
+      "dificuldade": "média",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 90,
+      "pergunta": "Qual é o nome da maior cadeia de montanhas do mundo?",
+      "opcoes": [
+        "Himalaia",
+        "Andes",
+        "Alpes",
+        "Rocky Mountains"
+      ],
+      "resposta_correta": "Himalaia",
+      "dificuldade": "fácil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 91,
+      "pergunta": "Qual é o símbolo químico do ouro?",
+      "opcoes": [
+        "Ag",
+        "Au",
+        "Fe",
+        "Pb"
+      ],
+      "resposta_correta": "Au",
+      "dificuldade": "fácil",
+      "categoria": "Química"
+    },
+    {
+      "id": 92,
+      "pergunta": "Qual é a principal função do sistema circulatório?",
+      "opcoes": [
+        "Transportar oxigênio para os pulmões",
+        "Produzir hormônios",
+        "Transportar nutrientes e oxigênio para as células",
+        "Armazenar energia"
+      ],
+      "resposta_correta": "Transportar nutrientes e oxigênio para as células",
+      "dificuldade": "média",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 93,
+      "pergunta": "Qual é o nome do movimento artístico que surgiu no início do século XX e focava na simplificação e abstração das formas?",
+      "opcoes": [
+        "Cubismo",
+        "Surrealismo",
+        "Impressionismo",
+        "Renascimento"
+      ],
+      "resposta_correta": "Cubismo",
+      "dificuldade": "difícil",
+      "categoria": "Arte"
+    },
+    {
+      "id": 94,
+      "pergunta": "Qual é a principal característica das plantas do grupo das gimnospermas?",
+      "opcoes": [
+        "Elas produzem flores",
+        "Elas têm sementes expostas",
+        "Elas não produzem sementes",
+        "Elas são parasitas"
+      ],
+      "resposta_correta": "Elas têm sementes expostas",
+      "dificuldade": "média",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 95,
+      "pergunta": "Em qual cidade nasceu o pintor Pablo Picasso?",
+      "opcoes": [
+        "Madrid",
+        "Barcelona",
+        "Paris",
+        "Malaga"
+      ],
+      "resposta_correta": "Malaga",
+      "dificuldade": "média",
+      "categoria": "Arte"
+    },
+    {
+      "id": 96,
+      "pergunta": "Quem foi o responsável pela criação do Facebook?",
+      "opcoes": [
+        "Steve Jobs",
+        "Bill Gates",
+        "Mark Zuckerberg",
+        "Larry Page"
+      ],
+      "resposta_correta": "Mark Zuckerberg",
+      "dificuldade": "fácil",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 97,
+      "pergunta": "Qual é a maior espécie de tubarão do mundo?",
+      "opcoes": [
+        "Tubarão Branco",
+        "Tubarão Baleia",
+        "Tubarão Martelo",
+        "Tubarão Tigre"
+      ],
+      "resposta_correta": "Tubarão Baleia",
+      "dificuldade": "média",
+      "categoria": "Animais"
+    },
+    {
+      "id": 98,
+      "pergunta": "Em que ano o homem chegou à Lua pela primeira vez?",
+      "opcoes": [
+        "1969",
+        "1959",
+        "1971",
+        "1980"
+      ],
+      "resposta_correta": "1969",
+      "dificuldade": "fácil",
+      "categoria": "História"
+    },
+    {
+      "id": 99,
+      "pergunta": "Qual é a principal função das raízes nas plantas?",
+      "opcoes": [
+        "Realizar fotossíntese",
+        "Absorver água e minerais do solo",
+        "Produzir sementes",
+        "Produzir frutos"
+      ],
+      "resposta_correta": "Absorver água e minerais do solo",
+      "dificuldade": "fácil",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 100,
+      "pergunta": "Quem é o autor do famoso livro '1984'?",
+      "opcoes": [
+        "George Orwell",
+        "Aldous Huxley",
+        "Ray Bradbury",
+        "Fahrenheit 451"
+      ],
+      "resposta_correta": "George Orwell",
+      "dificuldade": "média",
+      "categoria": "Literatura"
+    }
+
+    {
+      "id": 100,
+      "pergunta": "Qual foi o nome da primeira civilização a desenvolver a escrita cuneiforme?",
+      "opcoes": [
+        "Sumérios",
+        "Egípcios",
+        "Babilônios",
+        "Persas"
+      ],
+      "resposta_correta": "Sumérios",
+      "dificuldade": "difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 101,
+      "pergunta": "Quem foi o filósofo que disse 'Penso, logo existo'?",
+      "opcoes": [
+        "Immanuel Kant",
+        "René Descartes",
+        "Friedrich Nietzsche",
+        "John Locke"
+      ],
+      "resposta_correta": "René Descartes",
+      "dificuldade": "difícil",
+      "categoria": "Filosofia"
+    },
+    {
+      "id": 102,
+      "pergunta": "Qual é o nome da teoria que descreve o movimento das placas tectônicas da crosta terrestre?",
+      "opcoes": [
+        "Teoria da Deriva Continental",
+        "Teoria do Big Bang",
+        "Teoria do Caos",
+        "Teoria da Evolução"
+      ],
+      "resposta_correta": "Teoria da Deriva Continental",
+      "dificuldade": "difícil",
+      "categoria": "Geologia"
+    },
+    {
+      "id": 103,
+      "pergunta": "Qual é o nome da obra escrita por Niccolò Machiavelli que trata sobre política e poder?",
+      "opcoes": [
+        "A Arte da Guerra",
+        "O Príncipe",
+        "A República",
+        "Discurso sobre a Primeira Década de Tito Lívio"
+      ],
+      "resposta_correta": "O Príncipe",
+      "dificuldade": "difícil",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 104,
+      "pergunta": "Qual é o nome do matemático grego que formulou o teorema sobre os lados de um triângulo retângulo?",
+      "opcoes": [
+        "Pitágoras",
+        "Euclides",
+        "Aristóteles",
+        "Arquímedes"
+      ],
+      "resposta_correta": "Pitágoras",
+      "dificuldade": "difícil",
+      "categoria": "Matemática"
+    },
+    {
+      "id": 105,
+      "pergunta": "Qual foi o nome do imperador romano que adotou o cristianismo como religião oficial do império?",
+      "opcoes": [
+        "Júlio César",
+        "Augusto",
+        "Constantino",
+        "Nero"
+      ],
+      "resposta_correta": "Constantino",
+      "dificuldade": "difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 106,
+      "pergunta": "Em que ano foi assinado o Tratado de Tordesilhas, que dividiu o mundo entre Portugal e Espanha?",
+      "opcoes": [
+        "1492",
+        "1494",
+        "1500",
+        "1520"
+      ],
+      "resposta_correta": "1494",
+      "dificuldade": "difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 107,
+      "pergunta": "Quem foi o autor da teoria da evolução das espécies por seleção natural?",
+      "opcoes": [
+        "Albert Einstein",
+        "Charles Darwin",
+        "Gregor Mendel",
+        "Louis Pasteur"
+      ],
+      "resposta_correta": "Charles Darwin",
+      "dificuldade": "difícil",
+      "categoria": "Ciência"
+    },
+    {
+      "id": 108,
+      "pergunta": "Qual é o nome da famosa obra de James Joyce que revolucionou a literatura modernista?",
+      "opcoes": [
+        "Ulisses",
+        "O Grande Gatsby",
+        "Em Busca do Tempo Perdido",
+        "O Som e a Fúria"
+      ],
+      "resposta_correta": "Ulisses",
+      "dificuldade": "muito difícil",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 109,
+      "pergunta": "Qual é o nome do fenômeno físico que descreve a mudança da luz ao passar por diferentes meios materiais?",
+      "opcoes": [
+        "Reflexão",
+        "Refração",
+        "Dispersão",
+        "Difração"
+      ],
+      "resposta_correta": "Refração",
+      "dificuldade": "muito difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 110,
+      "pergunta": "Qual é o nome da ilha onde Napoleão Bonaparte nasceu?",
+      "opcoes": [
+        "Madagascar",
+        "Córsega",
+        "Ilha de Páscoa",
+        "Sicília"
+      ],
+      "resposta_correta": "Córsega",
+      "dificuldade": "difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 111,
+      "pergunta": "Qual é o nome do movimento artístico que se opôs ao realismo e foi marcado pelo uso exagerado da cor e forma?",
+      "opcoes": [
+        "Impressionismo",
+        "Cubismo",
+        "Expressionismo",
+        "Surrealismo"
+      ],
+      "resposta_correta": "Expressionismo",
+      "dificuldade": "muito difícil",
+      "categoria": "Arte"
+    },
+    {
+      "id": 112,
+      "pergunta": "Qual foi o nome da primeira missão tripulada a ir ao espaço?",
+      "opcoes": [
+        "Apollo 11",
+        "Vostok 1",
+        "Mercury-Redstone 3",
+        "Soyuz 11"
+      ],
+      "resposta_correta": "Vostok 1",
+      "dificuldade": "difícil",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 113,
+      "pergunta": "Qual é o nome da teoria matemática que lida com a análise de sistemas dinâmicos e caos?",
+      "opcoes": [
+        "Teoria do Caos",
+        "Teoria das Cordas",
+        "Teoria Quântica",
+        "Teoria da Relatividade"
+      ],
+      "resposta_correta": "Teoria do Caos",
+      "dificuldade": "muito difícil",
+      "categoria": "Matemática"
+    },
+    {
+      "id": 114,
+      "pergunta": "Qual é o nome do autor do livro 'Crítica da Razão Pura'?",
+      "opcoes": [
+        "Friedrich Nietzsche",
+        "Immanuel Kant",
+        "Jean-Paul Sartre",
+        "Karl Marx"
+      ],
+      "resposta_correta": "Immanuel Kant",
+      "dificuldade": "difícil",
+      "categoria": "Filosofia"
+    },
+    {
+      "id": 115,
+      "pergunta": "Qual é o nome da civilização mesoamericana que construiu pirâmides em Teotihuacán?",
+      "opcoes": [
+        "Astecas",
+        "Maias",
+        "Toltecas",
+        "Zapotecas"
+      ],
+      "resposta_correta": "Toltecas",
+      "dificuldade": "muito difícil",
+      "categoria": "História"
+    },
+
+    {
+      "id": 115,
+      "pergunta": "Qual é o nome do escritor que publicou o livro '1984', uma distopia sobre um regime totalitário?",
+      "opcoes": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "Philip K. Dick"
+      ],
+      "resposta_correta": "George Orwell",
+      "dificuldade": "média",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 116,
+      "pergunta": "Qual foi o primeiro imperador da China?",
+      "opcoes": [
+        "Sun Tzu",
+        "Confúcio",
+        "Qin Shi Huang",
+        "Liu Bang"
+      ],
+      "resposta_correta": "Qin Shi Huang",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 117,
+      "pergunta": "Qual foi o nome do projeto de pesquisa que levou ao desenvolvimento da bomba atômica durante a Segunda Guerra Mundial?",
+      "opcoes": [
+        "Projeto Manhattan",
+        "Projeto Apollo",
+        "Projeto Enigma",
+        "Projeto Códigos"
+      ],
+      "resposta_correta": "Projeto Manhattan",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 118,
+      "pergunta": "Qual é o nome do único elemento químico que é líquido à temperatura ambiente?",
+      "opcoes": [
+        "Mercúrio",
+        "Água",
+        "Bromo",
+        "Gálio"
+      ],
+      "resposta_correta": "Mercúrio",
+      "dificuldade": "média",
+      "categoria": "Química"
+    },
+    {
+      "id": 119,
+      "pergunta": "Quem foi o pintor do famoso quadro 'Guernica', que retrata os horrores da guerra civil espanhola?",
+      "opcoes": [
+        "Pablo Picasso",
+        "Vincent van Gogh",
+        "Salvador Dalí",
+        "Claude Monet"
+      ],
+      "resposta_correta": "Pablo Picasso",
+      "dificuldade": "média",
+      "categoria": "Arte"
+    },
+    {
+      "id": 120,
+      "pergunta": "Em que ano foi fundada a Organização das Nações Unidas (ONU)?",
+      "opcoes": [
+        "1918",
+        "1945",
+        "1950",
+        "1963"
+      ],
+      "resposta_correta": "1945",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 121,
+      "pergunta": "Qual é o nome do processo biológico que converte luz solar em energia química nas plantas?",
+      "opcoes": [
+        "Respiração celular",
+        "Fotossíntese",
+        "Fermentação",
+        "Transpiração"
+      ],
+      "resposta_correta": "Fotossíntese",
+      "dificuldade": "média",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 122,
+      "pergunta": "Em qual cidade foi realizado o primeiro Congresso Nacional dos Sovietes, que deu origem à Revolução Russa de 1917?",
+      "opcoes": [
+        "São Petersburgo",
+        "Moscovo",
+        "Petrogrado",
+        "Vladivostok"
+      ],
+      "resposta_correta": "Petrogrado",
+      "dificuldade": "difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 123,
+      "pergunta": "Quem foi o primeiro presidente do Brasil eleito por voto direto após a Ditadura Militar?",
+      "opcoes": [
+        "José Sarney",
+        "Fernando Henrique Cardoso",
+        "Luiz Inácio Lula da Silva",
+        "Tancredo Neves"
+      ],
+      "resposta_correta": "Tancredo Neves",
+      "dificuldade": "difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 124,
+      "pergunta": "Qual é o nome da teoria que sugere que o universo está se expandindo continuamente?",
+      "opcoes": [
+        "Teoria do Big Bang",
+        "Teoria da Relatividade Geral",
+        "Teoria das Cordas",
+        "Teoria da Expansão Cósmica"
+      ],
+      "resposta_correta": "Teoria do Big Bang",
+      "dificuldade": "difícil",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 125,
+      "pergunta": "Qual é o nome da teoria econômica que defende a mínima intervenção do governo na economia?",
+      "opcoes": [
+        "Keynesianismo",
+        "Monetarismo",
+        "Liberalismo",
+        "Socialismo"
+      ],
+      "resposta_correta": "Liberalismo",
+      "dificuldade": "difícil",
+      "categoria": "Economia"
+    },
+    {
+      "id": 126,
+      "pergunta": "Qual é o nome do princípio que afirma que a energia não pode ser criada nem destruída, apenas transformada?",
+      "opcoes": [
+        "Lei da Termodinâmica",
+        "Lei da Conservação da Energia",
+        "Teorema de Euler",
+        "Lei de Newton"
+      ],
+      "resposta_correta": "Lei da Conservação da Energia",
+      "dificuldade": "difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 127,
+      "pergunta": "Qual é o nome do método de datação utilizado para estimar a idade de fósseis e rochas?",
+      "opcoes": [
+        "Rádio-carbono",
+        "Datagem relativa",
+        "Carbono-14",
+        "Fissão nuclear"
+      ],
+      "resposta_correta": "Rádio-carbono",
+      "dificuldade": "difícil",
+      "categoria": "Ciência"
+    },
+    {
+      "id": 128,
+      "pergunta": "Qual é o nome do movimento artístico que se caracteriza pela representação distorcida e fragmentada da realidade?",
+      "opcoes": [
+        "Impressionismo",
+        "Cubismo",
+        "Expressionismo",
+        "Futurismo"
+      ],
+      "resposta_correta": "Cubismo",
+      "dificuldade": "muito difícil",
+      "categoria": "Arte"
+    },
+    {
+      "id": 129,
+      "pergunta": "Quem é o matemático conhecido por sua contribuição para a geometria não euclidiana?",
+      "opcoes": [
+        "Euclides",
+        "Gauss",
+        "Riemann",
+        "Poincaré"
+      ],
+      "resposta_correta": "Riemann",
+      "dificuldade": "muito difícil",
+      "categoria": "Matemática"
+    },
+    {
+      "id": 130,
+      "pergunta": "Qual é o nome da teoria de física que descreve as interações fundamentais entre as partículas subatômicas?",
+      "opcoes": [
+        "Teoria Quântica",
+        "Teoria da Relatividade Geral",
+        "Teoria das Cordas",
+        "Teoria da Matéria Escura"
+      ],
+      "resposta_correta": "Teoria Quântica",
+      "dificuldade": "muito difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 131,
+      "pergunta": "Qual filósofo alemão é conhecido por sua obra 'Crítica da Razão Pura' e suas ideias sobre a epistemologia?",
+      "opcoes": [
+        "Friedrich Nietzsche",
+        "Immanuel Kant",
+        "G.W.F. Hegel",
+        "Martin Heidegger"
+      ],
+      "resposta_correta": "Immanuel Kant",
+      "dificuldade": "muito difícil",
+      "categoria": "Filosofia"
+    },
+
+    {
+      "id": 132,
+      "pergunta": "Quem foi o autor da teoria das ideias inatas, que afirmava que todo conhecimento humano é uma forma de percepção interna?",
+      "opcoes": [
+        "René Descartes",
+        "John Locke",
+        "Jean-Jacques Rousseau",
+        "Platão"
+      ],
+      "resposta_correta": "René Descartes",
+      "dificuldade": "média",
+      "categoria": "Filosofia"
+    },
+    {
+      "id": 133,
+      "pergunta": "Qual o nome do escritor que criou o personagem de Sherlock Holmes?",
+      "opcoes": [
+        "Arthur Conan Doyle",
+        "Agatha Christie",
+        "Edgar Allan Poe",
+        "Raymond Chandler"
+      ],
+      "resposta_correta": "Arthur Conan Doyle",
+      "dificuldade": "média",
+      "categoria": "Literatura"
+    },
+    {
+      "id": 134,
+      "pergunta": "Em que ano ocorreu a Revolução Francesa?",
+      "opcoes": [
+        "1776",
+        "1789",
+        "1804",
+        "1815"
+      ],
+      "resposta_correta": "1789",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 135,
+      "pergunta": "Qual é o nome do principal arquipélago brasileiro que é um importante ponto turístico e ecoturístico, localizado no estado da Bahia?",
+      "opcoes": [
+        "Ilhas de Fernando de Noronha",
+        "Ilhas Malvinas",
+        "Ilhas de São Sebastião",
+        "Arquipélago de Abrolhos"
+      ],
+      "resposta_correta": "Arquipélago de Abrolhos",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 136,
+      "pergunta": "Quem foi o primeiro homem a viajar para o espaço?",
+      "opcoes": [
+        "Yuri Gagarin",
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Alan Shepard"
+      ],
+      "resposta_correta": "Yuri Gagarin",
+      "dificuldade": "média",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 137,
+      "pergunta": "Quem foi o líder revolucionário cubano que assumiu o poder em Cuba em 1959?",
+      "opcoes": [
+        "Ernesto Che Guevara",
+        "Fidel Castro",
+        "Raúl Castro",
+        "Juan Carlos"
+      ],
+      "resposta_correta": "Fidel Castro",
+      "dificuldade": "média",
+      "categoria": "História"
+    },
+    {
+      "id": 138,
+      "pergunta": "Qual é o nome do país que tem como capital Brasília, fundada em 1960?",
+      "opcoes": [
+        "Argentina",
+        "Brasil",
+        "Paraguai",
+        "Chile"
+      ],
+      "resposta_correta": "Brasil",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 139,
+      "pergunta": "Qual é a substância química que é o principal constituinte da base do vidro?",
+      "opcoes": [
+        "Silício",
+        "Cálcio",
+        "Ácido clorídrico",
+        "Oxigênio"
+      ],
+      "resposta_correta": "Silício",
+      "dificuldade": "média",
+      "categoria": "Química"
+    },
+    {
+      "id": 140,
+      "pergunta": "Qual é a teoria que defende a ideia de que a Terra gira em torno do Sol, sendo o centro do universo?",
+      "opcoes": [
+        "Teoria heliocêntrica",
+        "Teoria geocêntrica",
+        "Teoria gravitacional",
+        "Teoria do movimento dos planetas"
+      ],
+      "resposta_correta": "Teoria heliocêntrica",
+      "dificuldade": "média",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 141,
+      "pergunta": "Quem foi o matemático italiano que formulou o teorema que leva seu nome, relacionado aos triângulos retângulos?",
+      "opcoes": [
+        "Euclides",
+        "Pitágoras",
+        "Fermat",
+        "Galileu Galilei"
+      ],
+      "resposta_correta": "Pitágoras",
+      "dificuldade": "média",
+      "categoria": "Matemática"
+    },
+    {
+      "id": 142,
+      "pergunta": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "opcoes": [
+        "1963",
+        "1967",
+        "1969",
+        "1971"
+      ],
+      "resposta_correta": "1969",
+      "dificuldade": "difícil",
+      "categoria": "Astronomia"
+    },
+    {
+      "id": 143,
+      "pergunta": "Qual foi a cidade que foi a sede dos Jogos Olímpicos de 2008?",
+      "opcoes": [
+        "Londres",
+        "Pequim",
+        "Atenas",
+        "Rio de Janeiro"
+      ],
+      "resposta_correta": "Pequim",
+      "dificuldade": "difícil",
+      "categoria": "Esportes"
+    },
+    {
+      "id": 144,
+      "pergunta": "Qual é o nome do físico que desenvolveu a Teoria da Relatividade?",
+      "opcoes": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Niels Bohr",
+        "Galileu Galilei"
+      ],
+      "resposta_correta": "Albert Einstein",
+      "dificuldade": "difícil",
+      "categoria": "Física"
+    },
+    {
+      "id": 145,
+      "pergunta": "Em que ano o Brasil proclamou sua independência de Portugal?",
+      "opcoes": [
+        "1820",
+        "1822",
+        "1815",
+        "1831"
+      ],
+      "resposta_correta": "1822",
+      "dificuldade": "difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 146,
+      "pergunta": "Qual é o nome da teoria que descreve como as populações de organismos evoluem por meio da seleção natural?",
+      "opcoes": [
+        "Teoria da Evolução",
+        "Teoria da Deriva Genética",
+        "Teoria das Cordas",
+        "Teoria do Caos"
+      ],
+      "resposta_correta": "Teoria da Evolução",
+      "dificuldade": "difícil",
+      "categoria": "Biologia"
+    },
+    {
+      "id": 147,
+      "pergunta": "Qual é o nome do imperador romano responsável pela divisão do Império Romano em duas partes?",
+      "opcoes": [
+        "Júlio César",
+        "Augusto",
+        "Constantino",
+        "Diocleciano"
+      ],
+      "resposta_correta": "Diocleciano",
+      "dificuldade": "difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 148,
+      "pergunta": "Qual foi o nome do primeiro navegador português a chegar ao Brasil?",
+      "opcoes": [
+        "Pedro Álvares Cabral",
+        "Vasco da Gama",
+        "Fernão de Magalhães",
+        "Cristóvão Colombo"
+      ],
+      "resposta_correta": "Pedro Álvares Cabral",
+      "dificuldade": "muito difícil",
+      "categoria": "História"
+    },
+    {
+      "id": 149,
+      "pergunta": "Qual filósofo grego é conhecido por sua ideia de que o conhecimento é alcançado por meio da dialética?",
+      "opcoes": [
+        "Sócrates",
+        "Platão",
+        "Aristóteles",
+        "Parmênides"
+      ],
+      "resposta_correta": "Sócrates",
+      "dificuldade": "muito difícil",
+      "categoria": "Filosofia"
+    },
+
+    {
+      "id": 150,
+      "pergunta": "Qual é o nome do animal terrestre mais rápido do mundo?",
+      "opcoes": [
+        "Leão",
+        "Guepardo",
+        "Cavalo",
+        "Lince"
+      ],
+      "resposta_correta": "Guepardo",
+      "dificuldade": "média",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 151,
+      "pergunta": "Qual é o maior planeta do nosso sistema solar?",
+      "opcoes": [
+        "Terra",
+        "Júpiter",
+        "Saturno",
+        "Urano"
+      ],
+      "resposta_correta": "Júpiter",
+      "dificuldade": "média",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 152,
+      "pergunta": "Em qual país a Torre Eiffel está localizada?",
+      "opcoes": [
+        "Alemanha",
+        "França",
+        "Itália",
+        "Reino Unido"
+      ],
+      "resposta_correta": "França",
+      "dificuldade": "fácil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 153,
+      "pergunta": "Qual é o nome do famoso cientista que formulou as leis do movimento e da gravitação universal?",
+      "opcoes": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Galileu Galilei",
+        "Nikola Tesla"
+      ],
+      "resposta_correta": "Isaac Newton",
+      "dificuldade": "fácil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 154,
+      "pergunta": "Qual é o maior oceano do mundo?",
+      "opcoes": [
+        "Atlântico",
+        "Índico",
+        "Ártico",
+        "Pacífico"
+      ],
+      "resposta_correta": "Pacífico",
+      "dificuldade": "fácil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 155,
+      "pergunta": "Em qual continente está localizado o Egito?",
+      "opcoes": [
+        "África",
+        "Ásia",
+        "Europa",
+        "América"
+      ],
+      "resposta_correta": "África",
+      "dificuldade": "fácil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 156,
+      "pergunta": "Qual é a cor da pedra preciosa esmeralda?",
+      "opcoes": [
+        "Azul",
+        "Verde",
+        "Amarelo",
+        "Vermelho"
+      ],
+      "resposta_correta": "Verde",
+      "dificuldade": "fácil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 157,
+      "pergunta": "Qual é o nome da famosa ponte suspensa que conecta São Francisco a Marin County, na Califórnia?",
+      "opcoes": [
+        "Ponte de Brooklyn",
+        "Ponte Golden Gate",
+        "Ponte do Rio Nilo",
+        "Ponte George Washington"
+      ],
+      "resposta_correta": "Ponte Golden Gate",
+      "dificuldade": "média",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 158,
+      "pergunta": "Qual é o nome do maior animal do planeta?",
+      "opcoes": [
+        "Elefante",
+        "Baleia Azul",
+        "Girafa",
+        "Tubarão-Baleia"
+      ],
+      "resposta_correta": "Baleia Azul",
+      "dificuldade": "média",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 159,
+      "pergunta": "Qual é o nome do único metal que é líquido à temperatura ambiente?",
+      "opcoes": [
+        "Mercúrio",
+        "Ouro",
+        "Prata",
+        "Cobre"
+      ],
+      "resposta_correta": "Mercúrio",
+      "dificuldade": "média",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 160,
+      "pergunta": "Quantos continentes existem no planeta Terra?",
+      "opcoes": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "resposta_correta": "7",
+      "dificuldade": "fácil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 161,
+      "pergunta": "Qual é a velocidade da luz no vácuo?",
+      "opcoes": [
+        "300.000 km/h",
+        "300.000 km/s",
+        "150.000 km/s",
+        "1.000.000 km/h"
+      ],
+      "resposta_correta": "300.000 km/s",
+      "dificuldade": "média",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 162,
+      "pergunta": "Qual é o país com a maior população do mundo?",
+      "opcoes": [
+        "Índia",
+        "Brasil",
+        "Estados Unidos",
+        "China"
+      ],
+      "resposta_correta": "China",
+      "dificuldade": "média",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 163,
+      "pergunta": "Qual é o nome da maior floresta tropical do mundo?",
+      "opcoes": [
+        "Floresta Amazônica",
+        "Floresta do Congo",
+        "Floresta Negra",
+        "Floresta de Borneo"
+      ],
+      "resposta_correta": "Floresta Amazônica",
+      "dificuldade": "média",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 164,
+      "pergunta": "Quem foi o criador do famoso personagem de quadrinhos Superman?",
+      "opcoes": [
+        "Stan Lee",
+        "Jack Kirby",
+        "Joe Shuster e Jerry Siegel",
+        "Bob Kane"
+      ],
+      "resposta_correta": "Joe Shuster e Jerry Siegel",
+      "dificuldade": "difícil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 165,
+      "pergunta": "Em que ano o Titanic afundou após colidir com um iceberg?",
+      "opcoes": [
+        "1910",
+        "1912",
+        "1914",
+        "1916"
+      ],
+      "resposta_correta": "1912",
+      "dificuldade": "difícil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 166,
+      "pergunta": "Qual é o nome do maior deserto do mundo?",
+      "opcoes": [
+        "Deserto do Saara",
+        "Deserto de Atacama",
+        "Deserto da Antártida",
+        "Deserto de Kalahari"
+      ],
+      "resposta_correta": "Deserto da Antártida",
+      "dificuldade": "difícil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 167,
+      "pergunta": "Qual é o animal que pode viver mais tempo no planeta Terra?",
+      "opcoes": [
+        "Tartaruga das Galápagos",
+        "Orca",
+        "Elefante africano",
+        "Baleia de Balsas"
+      ],
+      "resposta_correta": "Tartaruga das Galápagos",
+      "dificuldade": "difícil",
+      "categoria": "Curiosidades"
+    },
+    {
+      "id": 168,
+      "pergunta": "Qual foi a primeira civilização a usar a escrita cuneiforme?",
+      "opcoes": [
+        "Egípcios",
+        "Sumérios",
+        "Fenícios",
+        "Assírios"
+      ],
+      "resposta_correta": "Sumérios",
+      "dificuldade": "difícil",
+      "categoria": "Curiosidades"
+    },
+
+    {
+      "id": 169,
+      "pergunta": "Qual é o nome do primeiro computador eletrônico digital de propósito geral?",
+      "opcoes": [
+        "ENIAC",
+        "IBM 700",
+        "Apple I",
+        "Colossus"
+      ],
+      "resposta_correta": "ENIAC",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 170,
+      "pergunta": "Em que ano a Microsoft foi fundada?",
+      "opcoes": [
+        "1975",
+        "1980",
+        "1985",
+        "1990"
+      ],
+      "resposta_correta": "1975",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 171,
+      "pergunta": "Quem é o fundador da empresa de tecnologia Tesla?",
+      "opcoes": [
+        "Elon Musk",
+        "Bill Gates",
+        "Steve Jobs",
+        "Jeff Bezos"
+      ],
+      "resposta_correta": "Elon Musk",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 172,
+      "pergunta": "O que significa a sigla 'HTTP' na web?",
+      "opcoes": [
+        "HyperText Transport Protocol",
+        "HyperText Transfer Protocol",
+        "Hyper Transfer Text Protocol",
+        "High Tech Text Protocol"
+      ],
+      "resposta_correta": "HyperText Transfer Protocol",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 173,
+      "pergunta": "Qual é o nome do sistema operacional desenvolvido pela Microsoft para servidores e computadores pessoais?",
+      "opcoes": [
+        "Linux",
+        "Windows",
+        "macOS",
+        "Android"
+      ],
+      "resposta_correta": "Windows",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 174,
+      "pergunta": "O que é a 'nuvem' no contexto da computação?",
+      "opcoes": [
+        "Uma ferramenta de armazenamento de dados local",
+        "Uma forma de computação onde dados e serviços são armazenados na internet",
+        "Um tipo de software antivírus",
+        "Um sistema operacional de código aberto"
+      ],
+      "resposta_correta": "Uma forma de computação onde dados e serviços são armazenados na internet",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 175,
+      "pergunta": "Qual empresa foi responsável pelo lançamento do primeiro smartphone com o sistema operacional Android?",
+      "opcoes": [
+        "HTC",
+        "Samsung",
+        "Nokia",
+        "Apple"
+      ],
+      "resposta_correta": "HTC",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 176,
+      "pergunta": "Quem inventou a World Wide Web (WWW)?",
+      "opcoes": [
+        "Tim Berners-Lee",
+        "Bill Gates",
+        "Steve Jobs",
+        "Mark Zuckerberg"
+      ],
+      "resposta_correta": "Tim Berners-Lee",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 177,
+      "pergunta": "Qual é o nome da tecnologia que permite que objetos físicos interajam com a internet, muitas vezes conhecida como a Internet das Coisas (IoT)?",
+      "opcoes": [
+        "5G",
+        "Bluetooth",
+        "Wi-Fi",
+        "RFID"
+      ],
+      "resposta_correta": "RFID",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 178,
+      "pergunta": "Qual é o nome do primeiro computador pessoal produzido pela Apple?",
+      "opcoes": [
+        "MacBook",
+        "iMac",
+        "Apple I",
+        "Macintosh"
+      ],
+      "resposta_correta": "Apple I",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 179,
+      "pergunta": "Qual linguagem de programação foi criada por James Gosling e é amplamente utilizada em aplicativos corporativos e sistemas grandes?",
+      "opcoes": [
+        "C",
+        "Python",
+        "Java",
+        "JavaScript"
+      ],
+      "resposta_correta": "Java",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 180,
+      "pergunta": "Qual foi o primeiro navegador de internet a ganhar grande popularidade, lançado em 1995?",
+      "opcoes": [
+        "Internet Explorer",
+        "Google Chrome",
+        "Netscape Navigator",
+        "Firefox"
+      ],
+      "resposta_correta": "Netscape Navigator",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 181,
+      "pergunta": "O que é a 'Blockchain'?",
+      "opcoes": [
+        "Uma forma de criptografia usada para proteger senhas",
+        "Uma tecnologia de armazenamento de dados distribuídos, usada por criptomoedas",
+        "Um sistema de computação em nuvem",
+        "Um tipo de software antivírus"
+      ],
+      "resposta_correta": "Uma tecnologia de armazenamento de dados distribuídos, usada por criptomoedas",
+      "dificuldade": "difícil",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 182,
+      "pergunta": "Em 2007, qual empresa lançou o primeiro modelo do iPhone?",
+      "opcoes": [
+        "Apple",
+        "Samsung",
+        "Motorola",
+        "Nokia"
+      ],
+      "resposta_correta": "Apple",
+      "dificuldade": "difícil",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 183,
+      "pergunta": "Qual é a função do sistema operacional Linux?",
+      "opcoes": [
+        "Gerenciar a memória RAM",
+        "Controle do hardware e gerenciamento de arquivos",
+        "Proteger contra vírus",
+        "Conectar-se à internet"
+      ],
+      "resposta_correta": "Controle do hardware e gerenciamento de arquivos",
+      "dificuldade": "difícil",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 184,
+      "pergunta": "Qual foi o primeiro tipo de código de programação usado na criação do software para a primeira bomba atômica?",
+      "opcoes": [
+        "Assembler",
+        "FORTRAN",
+        "COBOL",
+        "C"
+      ],
+      "resposta_correta": "Assembler",
+      "dificuldade": "difícil",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 185,
+      "pergunta": "Qual das seguintes empresas foi fundada por Jeff Bezos?",
+      "opcoes": [
+        "Google",
+        "Amazon",
+        "Facebook",
+        "Microsoft"
+      ],
+      "resposta_correta": "Amazon",
+      "dificuldade": "difícil",
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 186,
+      "pergunta": "Qual é o nome da empresa que desenvolve o sistema operacional Android?",
+      "opcoes": [
+        "Google",
+        "Microsoft",
+        "Apple",
+        "Samsung"
+      ],
+      "resposta_correta": "Google",
+      "dificuldade": "média",
+      "categoria": "Tecnologia"
+    },
+
+    {
+      "id": 205,
+      "pergunta": "Qual foi o nome do primeiro livro do Antigo Testamento?",
+      "opcoes": [
+        "Gênesis",
+        "Êxodo",
+        "Levítico",
+        "Deuteronômio"
+      ],
+      "resposta_correta": "Gênesis",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 206,
+      "pergunta": "Quem foi o profeta que desafiou os profetas de Baal no monte Carmelo?",
+      "opcoes": [
+        "Elias",
+        "Isaías",
+        "Jeremias",
+        "Eliseu"
+      ],
+      "resposta_correta": "Elias",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 207,
+      "pergunta": "Qual apóstolo escreveu o Livro de Apocalipse?",
+      "opcoes": [
+        "Paulo",
+        "Pedro",
+        "João",
+        "Mateus"
+      ],
+      "resposta_correta": "João",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 208,
+      "pergunta": "Quem foi o rei de Israel que pediu a Deus sabedoria em vez de riqueza ou longa vida?",
+      "opcoes": [
+        "Saul",
+        "Davi",
+        "Salomão",
+        "Josias"
+      ],
+      "resposta_correta": "Salomão",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 209,
+      "pergunta": "Onde Jesus nasceu?",
+      "opcoes": [
+        "Nazaret",
+        "Jerusalém",
+        "Belém",
+        "Capernaum"
+      ],
+      "resposta_correta": "Belém",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 210,
+      "pergunta": "Qual discípulo de Jesus era conhecido como 'Dídimo', ou o 'gêmeo'?",
+      "opcoes": [
+        "Pedro",
+        "João",
+        "Tomé",
+        "Tiago"
+      ],
+      "resposta_correta": "Tomé",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 211,
+      "pergunta": "Quem foi o patriarca de Israel que teve 12 filhos, cujas famílias se tornaram as 12 tribos de Israel?",
+      "opcoes": [
+        "Abraão",
+        "Isaac",
+        "Jacó",
+        "José"
+      ],
+      "resposta_correta": "Jacó",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 212,
+      "pergunta": "Qual foi o nome do mar que os israelitas atravessaram durante o Êxodo do Egito?",
+      "opcoes": [
+        "Mar Vermelho",
+        "Mar Mediterrâneo",
+        "Mar da Galileia",
+        "Mar Egeu"
+      ],
+      "resposta_correta": "Mar Vermelho",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 213,
+      "pergunta": "Qual livro da Bíblia é conhecido como o 'livro da sabedoria'?",
+      "opcoes": [
+        "Provérbios",
+        "Eclesiastes",
+        "Salmos",
+        "Cânticos"
+      ],
+      "resposta_correta": "Provérbios",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 214,
+      "pergunta": "Qual foi o nome do gigante derrotado por Davi com uma pedra?",
+      "opcoes": [
+        "Golias",
+        "Saul",
+        "Absalão",
+        "Sansão"
+      ],
+      "resposta_correta": "Golias",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 215,
+      "pergunta": "Quem foi a mãe de Samuel, o profeta?",
+      "opcoes": [
+        "Raquel",
+        "Ana",
+        "Sara",
+        "Miriã"
+      ],
+      "resposta_correta": "Ana",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 216,
+      "pergunta": "Qual livro do Antigo Testamento descreve a história de Rute?",
+      "opcoes": [
+        "Juízes",
+        "Rute",
+        "Gênesis",
+        "2 Samuel"
+      ],
+      "resposta_correta": "Rute",
+      "dificuldade": "média",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 217,
+      "pergunta": "Qual dos apóstolos traiu Jesus por trinta peças de prata?",
+      "opcoes": [
+        "Judas Iscariotes",
+        "Simão Pedro",
+        "Mateus",
+        "Tiago"
+      ],
+      "resposta_correta": "Judas Iscariotes",
+      "dificuldade": "dificil",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 218,
+      "pergunta": "Quem foi o profeta que foi alimentado por corvos durante uma fome em Israel?",
+      "opcoes": [
+        "Elias",
+        "Eliseu",
+        "Isaías",
+        "Jeremias"
+      ],
+      "resposta_correta": "Elias",
+      "dificuldade": "dificil",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 219,
+      "pergunta": "Qual foi o último rei de Judá antes da destruição de Jerusalém pelos babilônios?",
+      "opcoes": [
+        "Ezequias",
+        "Manassés",
+        "Zedequias",
+        "Josias"
+      ],
+      "resposta_correta": "Zedequias",
+      "dificuldade": "dificil",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 220,
+      "pergunta": "Quem foi o profeta que teve uma visão de um vale de ossos secos que voltaram à vida?",
+      "opcoes": [
+        "Isaías",
+        "Jeremias",
+        "Ezequiel",
+        "Daniel"
+      ],
+      "resposta_correta": "Ezequiel",
+      "dificuldade": "dificil",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 221,
+      "pergunta": "Quem foi o primeiro rei de Israel?",
+      "opcoes": [
+        "Saul",
+        "Davi",
+        "Salomão",
+        "Ezequias"
+      ],
+      "resposta_correta": "Saul",
+      "dificuldade": "dificil",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 222,
+      "pergunta": "Qual foi o nome da esposa de Abraão, que teve um filho quando já era muito idosa?",
+      "opcoes": [
+        "Sara",
+        "Rebeca",
+        "Raquel",
+        "Miriã"
+      ],
+      "resposta_correta": "Sara",
+      "dificuldade": "dificil",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 223,
+      "pergunta": "Qual apóstolo escreveu o Evangelho segundo João?",
+      "opcoes": [
+        "João",
+        "Mateus",
+        "Marcos",
+        "Lucas"
+      ],
+      "resposta_correta": "João",
+      "dificuldade": "difícil",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 224,
+      "pergunta": "Qual é o menor versículo da Bíblia?",
+      "opcoes": [
+        "Jesus chorou.",
+        "Em tudo dai graças.",
+        "Eu sou o bom pastor.",
+        "Nada temas."
+      ],
+      "resposta_correta": "Jesus chorou.",
+      "dificuldade": "muito difícil",
+      "categoria": "Bíblico"
+    },
+    {
+      "id": 225,
+      "pergunta": "Qual é o maior país do mundo em extensão territorial?",
+      "opcoes": [
+        "Estados Unidos",
+        "Brasil",
+        "China",
+        "Rússia"
+      ],
+      "resposta_correta": "Rússia",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 226,
+      "pergunta": "Qual é o continente com o maior número de países?",
+      "opcoes": [
+        "África",
+        "Ásia",
+        "Europa",
+        "América"
+      ],
+      "resposta_correta": "África",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 227,
+      "pergunta": "Qual é o maior oceano do mundo?",
+      "opcoes": [
+        "Oceano Atlântico",
+        "Oceano Índico",
+        "Oceano Ártico",
+        "Oceano Pacífico"
+      ],
+      "resposta_correta": "Oceano Pacífico",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 228,
+      "pergunta": "Qual é o ponto mais baixo da Terra em termos de elevação?",
+      "opcoes": [
+        "Fossa das Marianas",
+        "Deserto do Saara",
+        "Mar Morto",
+        "Valle da Morte"
+      ],
+      "resposta_correta": "Mar Morto",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 229,
+      "pergunta": "Em qual continente está localizada a Cordilheira dos Andes?",
+      "opcoes": [
+        "África",
+        "América do Sul",
+        "Ásia",
+        "América do Norte"
+      ],
+      "resposta_correta": "América do Sul",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 230,
+      "pergunta": "Qual é o nome do maior deserto quente do mundo?",
+      "opcoes": [
+        "Deserto do Saara",
+        "Deserto de Gobi",
+        "Deserto de Kalahari",
+        "Deserto da Arábia"
+      ],
+      "resposta_correta": "Deserto do Saara",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 231,
+      "pergunta": "Qual é a capital da Austrália?",
+      "opcoes": [
+        "Sidney",
+        "Melbourne",
+        "Canberra",
+        "Perth"
+      ],
+      "resposta_correta": "Canberra",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 232,
+      "pergunta": "Qual é o maior rio do mundo em comprimento?",
+      "opcoes": [
+        "Rio Amazonas",
+        "Rio Nilo",
+        "Rio Yangtzé",
+        "Rio Mississippi"
+      ],
+      "resposta_correta": "Rio Amazonas",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 233,
+      "pergunta": "Qual é a montanha mais alta do mundo?",
+      "opcoes": [
+        "Monte Everest",
+        "K2",
+        "Kangchenjunga",
+        "Monte Kilimanjaro"
+      ],
+      "resposta_correta": "Monte Everest",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 234,
+      "pergunta": "Em que continente está localizada a cidade de Cairo?",
+      "opcoes": [
+        "África",
+        "Ásia",
+        "Europa",
+        "América"
+      ],
+      "resposta_correta": "África",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 235,
+      "pergunta": "Qual é o maior arquipélago do mundo?",
+      "opcoes": [
+        "Ilhas Maldivas",
+        "Filipinas",
+        "Indonésia",
+        "Caribe"
+      ],
+      "resposta_correta": "Indonésia",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 236,
+      "pergunta": "Qual país tem a maior população do mundo?",
+      "opcoes": [
+        "Índia",
+        "China",
+        "Estados Unidos",
+        "Indonésia"
+      ],
+      "resposta_correta": "China",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 237,
+      "pergunta": "Qual é o maior país da América do Sul?",
+      "opcoes": [
+        "Brasil",
+        "Argentina",
+        "Colômbia",
+        "Chile"
+      ],
+      "resposta_correta": "Brasil",
+      "dificuldade": "média",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 238,
+      "pergunta": "Qual é o único país que tem uma bandeira quadrada?",
+      "opcoes": [
+        "Suíça",
+        "Vaticano",
+        "Nepal",
+        "Bahamas"
+      ],
+      "resposta_correta": "Suíça",
+      "dificuldade": "difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 239,
+      "pergunta": "Qual é o nome da cadeia de montanhas que separa a França e a Espanha?",
+      "opcoes": [
+        "Alpes",
+        "Pirineus",
+        "Apeninos",
+        "Cordilheira dos Andes"
+      ],
+      "resposta_correta": "Pirineus",
+      "dificuldade": "difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 240,
+      "pergunta": "Qual é o maior lago do mundo em área?",
+      "opcoes": [
+        "Lago Baikal",
+        "Lago de Caspio",
+        "Lago Vitória",
+        "Lago Superior"
+      ],
+      "resposta_correta": "Lago de Caspio",
+      "dificuldade": "difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 241,
+      "pergunta": "Qual é o nome da maior ilha do mundo?",
+      "opcoes": [
+        "Grã-Bretanha",
+        "Groenlândia",
+        "Nova Guiné",
+        "Borneo"
+      ],
+      "resposta_correta": "Groenlândia",
+      "dificuldade": "difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 242,
+      "pergunta": "Qual é o país com a maior extensão de litoral do mundo?",
+      "opcoes": [
+        "Rússia",
+        "Canadá",
+        "Austrália",
+        "Brasil"
+      ],
+      "resposta_correta": "Canadá",
+      "dificuldade": "difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 243,
+      "pergunta": "Qual país tem o maior número de fusos horários?",
+      "opcoes": [
+        "Rússia",
+        "Estados Unidos",
+        "Brasil",
+        "China"
+      ],
+      "resposta_correta": "Rússia",
+      "dificuldade": "difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 244,
+      "pergunta": "Em que continente se encontra o Deserto de Atacama, o lugar mais seco da Terra?",
+      "opcoes": [
+        "África",
+        "Ásia",
+        "América do Sul",
+        "Oceania"
+      ],
+      "resposta_correta": "América do Sul",
+      "dificuldade": "muito difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 245,
+      "pergunta": "Qual é a cidade mais populosa do mundo?",
+      "opcoes": [
+        "Pequim",
+        "Tóquio",
+        "Bombaim",
+        "São Paulo"
+      ],
+      "resposta_correta": "Tóquio",
+      "dificuldade": "muito difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 246,
+      "pergunta": "Qual é o país com o maior número de ilhas no mundo?",
+      "opcoes": [
+        "Suécia",
+        "Finlândia",
+        "Indonésia",
+        "Grécia"
+      ],
+      "resposta_correta": "Suécia",
+      "dificuldade": "muito difícil",
+      "categoria": "Geografia"
+    },
+    {
+      "id": 247,
+      "pergunta": "Quem foi o diretor do filme 'Titanic' (1997)?",
+      "opcoes": [
+        "Steven Spielberg",
+        "Martin Scorsese",
+        "James Cameron",
+        "Ridley Scott"
+      ],
+      "resposta_correta": "James Cameron",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 248,
+      "pergunta": "Qual é o nome do primeiro filme da série 'Harry Potter'?",
+      "opcoes": [
+        "Harry Potter e a Câmara Secreta",
+        "Harry Potter e o Prisioneiro de Azkaban",
+        "Harry Potter e a Pedra Filosofal",
+        "Harry Potter e o Cálice de Fogo"
+      ],
+      "resposta_correta": "Harry Potter e a Pedra Filosofal",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 249,
+      "pergunta": "Qual cantor lançou o álbum 'Thriller', o mais vendido de todos os tempos?",
+      "opcoes": [
+        "Elvis Presley",
+        "Michael Jackson",
+        "Prince",
+        "Whitney Houston"
+      ],
+      "resposta_correta": "Michael Jackson",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 250,
+      "pergunta": "Em que ano foi lançado o primeiro filme de 'Os Vingadores'?",
+      "opcoes": [
+        "2010",
+        "2012",
+        "2014",
+        "2016"
+      ],
+      "resposta_correta": "2012",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 251,
+      "pergunta": "Quem interpretou o personagem de Jack Dawson em 'Titanic'?",
+      "opcoes": [
+        "Matt Damon",
+        "Leonardo DiCaprio",
+        "Brad Pitt",
+        "Johnny Depp"
+      ],
+      "resposta_correta": "Leonardo DiCaprio",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 252,
+      "pergunta": "Qual foi o primeiro filme de animação da Disney?",
+      "opcoes": [
+        "Branca de Neve e os Sete Anões",
+        "Cinderela",
+        "Pinóquio",
+        "Fantasia"
+      ],
+      "resposta_correta": "Branca de Neve e os Sete Anões",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 253,
+      "pergunta": "Qual ator interpretou o personagem de Tony Stark (Homem de Ferro) no MCU?",
+      "opcoes": [
+        "Chris Hemsworth",
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Mark Ruffalo"
+      ],
+      "resposta_correta": "Robert Downey Jr.",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 254,
+      "pergunta": "Qual série de TV teve o personagem Walter White como protagonista?",
+      "opcoes": [
+        "Breaking Bad",
+        "Better Call Saul",
+        "The Sopranos",
+        "Narcos"
+      ],
+      "resposta_correta": "Breaking Bad",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 255,
+      "pergunta": "Qual artista ganhou o Grammy de 'Álbum do Ano' em 2020 com o álbum 'When We All Fall Asleep, Where Do We Go?'?",
+      "opcoes": [
+        "Billie Eilish",
+        "Ariana Grande",
+        "Taylor Swift",
+        "Ed Sheeran"
+      ],
+      "resposta_correta": "Billie Eilish",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 256,
+      "pergunta": "Qual filme ganhou o Oscar de Melhor Filme em 2020?",
+      "opcoes": [
+        "Parasita",
+        "1917",
+        "O Irlandês",
+        "Coringa"
+      ],
+      "resposta_correta": "Parasita",
+      "dificuldade": "dificil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 257,
+      "pergunta": "Quem foi o primeiro ator a interpretar o personagem James Bond nos filmes?",
+      "opcoes": [
+        "Sean Connery",
+        "Roger Moore",
+        "Pierce Brosnan",
+        "Daniel Craig"
+      ],
+      "resposta_correta": "Sean Connery",
+      "dificuldade": "dificil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 258,
+      "pergunta": "Em que filme de 1994 o personagem de Tom Hanks, Forrest Gump, corre por todo os Estados Unidos?",
+      "opcoes": [
+        "Náufrago",
+        "Forrest Gump",
+        "O Resgate do Soldado Ryan",
+        "O Náufrago"
+      ],
+      "resposta_correta": "Forrest Gump",
+      "dificuldade": "dificil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 259,
+      "pergunta": "Qual filme de animação de 2010 foi produzido pela Pixar e é ambientado no Brasil?",
+      "opcoes": [
+        "Ratatouille",
+        "Toy Story 3",
+        "Up - Altas Aventuras",
+        "Rio"
+      ],
+      "resposta_correta": "Ratatouille",
+      "dificuldade": "dificil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 260,
+      "pergunta": "Qual foi o nome da primeira banda de rock de Freddie Mercury?",
+      "opcoes": [
+        "The Beatles",
+        "The Rolling Stones",
+        "Queen",
+        "Smile"
+      ],
+      "resposta_correta": "Smile",
+      "dificuldade": "dificil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 261,
+      "pergunta": "Quem venceu o primeiro 'Big Brother Brasil', exibido em 2002?",
+      "opcoes": [
+        "Kléber Bambam",
+        "Dhomini",
+        "Cida",
+        "Juliette"
+      ],
+      "resposta_correta": "Kléber Bambam",
+      "dificuldade": "dificil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 262,
+      "pergunta": "Em qual filme o personagem de Keanu Reeves, Neo, se torna o 'Escolhido'?",
+      "opcoes": [
+        "John Wick",
+        "The Matrix",
+        "Constantine",
+        "Velocidade Máxima"
+      ],
+      "resposta_correta": "The Matrix",
+      "dificuldade": "dificil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 263,
+      "pergunta": "Qual foi o primeiro filme de animação da Pixar?",
+      "opcoes": [
+        "Toy Story",
+        "Monstros S.A.",
+        "Procurando Nemo",
+        "Carros"
+      ],
+      "resposta_correta": "Toy Story",
+      "dificuldade": "dificil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 264,
+      "pergunta": "Em que ano o filme 'O Senhor dos Anéis: O Retorno do Rei' venceu 11 Oscars?",
+      "opcoes": [
+        "2000",
+        "2001",
+        "2003",
+        "2005"
+      ],
+      "resposta_correta": "2003",
+      "dificuldade": "muito difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 265,
+      "pergunta": "Qual foi o nome do filme de 2009 que ganhou o Oscar de Melhor Filme e se passa em um futuro com seres humanos vivendo em uma lua chamada Pandora?",
+      "opcoes": [
+        "O Rei Leão",
+        "Avatar",
+        "O Hobbit",
+        "Interstellar"
+      ],
+      "resposta_correta": "Avatar",
+      "dificuldade": "muito difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 266,
+      "pergunta": "Quem foi a vencedora do primeiro 'The Voice Brasil' em 2012?",
+      "opcoes": [
+        "Carla Machado",
+        "Daniele Daudt",
+        "Vanessa da Mata",
+        "Érika Martins"
+      ],
+      "resposta_correta": "Érika Martins",
+      "dificuldade": "muito difícil",
+      "categoria": "Entretenimento"
+    }
+    {
+      "id": 267,
+      "pergunta": "Quem ganhou o Oscar de Melhor Ator em 2020?",
+      "opcoes": [
+        "Brad Pitt",
+        "Joaquin Phoenix",
+        "Leonardo DiCaprio",
+        "Adam Driver"
+      ],
+      "resposta_correta": "Joaquin Phoenix",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 268,
+      "pergunta": "Qual é o nome do autor da série de livros 'Game of Thrones'?",
+      "opcoes": [
+        "J.R.R. Tolkien",
+        "George R.R. Martin",
+        "J.K. Rowling",
+        "Stephen King"
+      ],
+      "resposta_correta": "George R.R. Martin",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 269,
+      "pergunta": "Qual personagem é interpretado por Chris Hemsworth no Universo Cinematográfico Marvel?",
+      "opcoes": [
+        "Thor",
+        "Hulk",
+        "Capitão América",
+        "Homem de Ferro"
+      ],
+      "resposta_correta": "Thor",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 270,
+      "pergunta": "Qual foi o primeiro álbum de estúdio da cantora Beyoncé?",
+      "opcoes": [
+        "B'Day",
+        "Dangerously in Love",
+        "I Am... Sasha Fierce",
+        "4"
+      ],
+      "resposta_correta": "Dangerously in Love",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 271,
+      "pergunta": "Qual é o nome do famoso parque temático criado por Walt Disney?",
+      "opcoes": [
+        "Universal Studios",
+        "Epcot Center",
+        "Disneyland",
+        "Legoland"
+      ],
+      "resposta_correta": "Disneyland",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 272,
+      "pergunta": "Qual foi o filme mais assistido no streaming Netflix em 2020?",
+      "opcoes": [
+        "The Irishman",
+        "Extraction",
+        "Bird Box",
+        "Enola Holmes"
+      ],
+      "resposta_correta": "Extraction",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 273,
+      "pergunta": "Em que ano a série 'Friends' foi lançada?",
+      "opcoes": [
+        "1992",
+        "1994",
+        "1996",
+        "1998"
+      ],
+      "resposta_correta": "1994",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 274,
+      "pergunta": "Quem interpretou o personagem de Tony Stark (Homem de Ferro) nos filmes do Universo Marvel?",
+      "opcoes": [
+        "Chris Hemsworth",
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Mark Ruffalo"
+      ],
+      "resposta_correta": "Robert Downey Jr.",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 275,
+      "pergunta": "Qual filme de animação da Pixar apresenta o personagem Woody?",
+      "opcoes": [
+        "Monstros S.A.",
+        "Procurando Nemo",
+        "Toy Story",
+        "Up: Altas Aventuras"
+      ],
+      "resposta_correta": "Toy Story",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 276,
+      "pergunta": "Qual é o nome do personagem de Keanu Reeves em 'John Wick'?",
+      "opcoes": [
+        "Neo",
+        "Jack",
+        "John Wick",
+        "David"
+      ],
+      "resposta_correta": "John Wick",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 277,
+      "pergunta": "Quem venceu o Grammy de 'Álbum do Ano' em 2021 com o álbum 'Folklore'?",
+      "opcoes": [
+        "Ariana Grande",
+        "Billie Eilish",
+        "Taylor Swift",
+        "Beyoncé"
+      ],
+      "resposta_correta": "Taylor Swift",
+      "dificuldade": "média",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 278,
+      "pergunta": "Qual série de TV tem o personagem principal chamado Rick Grimes?",
+      "opcoes": [
+        "The Walking Dead",
+        "Stranger Things",
+        "Prison Break",
+        "Game of Thrones"
+      ],
+      "resposta_correta": "The Walking Dead",
+      "dificuldade": "difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 279,
+      "pergunta": "Quem foi o criador da série 'The Simpsons'?",
+      "opcoes": [
+        "Matt Groening",
+        "Seth MacFarlane",
+        "Trey Parker",
+        "Dan Harmon"
+      ],
+      "resposta_correta": "Matt Groening",
+      "dificuldade": "difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 280,
+      "pergunta": "Em qual cidade foi filmado o clássico 'O Poderoso Chefão'?",
+      "opcoes": [
+        "Las Vegas",
+        "Nova York",
+        "Chicago",
+        "Sicília"
+      ],
+      "resposta_correta": "Sicília",
+      "dificuldade": "difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 281,
+      "pergunta": "Qual foi o primeiro filme de animação a ser indicado ao Oscar de Melhor Filme?",
+      "opcoes": [
+        "A Bela e a Fera",
+        "Toy Story",
+        "O Rei Leão",
+        "Shrek"
+      ],
+      "resposta_correta": "A Bela e a Fera",
+      "dificuldade": "difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 282,
+      "pergunta": "Quem foi o criador do famoso jogo 'Super Mario Bros.'?",
+      "opcoes": [
+        "Hideo Kojima",
+        "Shigeru Miyamoto",
+        "Ken Levine",
+        "John Carmack"
+      ],
+      "resposta_correta": "Shigeru Miyamoto",
+      "dificuldade": "difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 283,
+      "pergunta": "Qual é o nome do álbum mais famoso de Pink Floyd, lançado em 1973?",
+      "opcoes": [
+        "The Wall",
+        "Dark Side of the Moon",
+        "Wish You Were Here",
+        "Animals"
+      ],
+      "resposta_correta": "Dark Side of the Moon",
+      "dificuldade": "difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 284,
+      "pergunta": "Qual artista popularizou a música 'Like a Virgin' em 1984?",
+      "opcoes": [
+        "Madonna",
+        "Cyndi Lauper",
+        "Whitney Houston",
+        "Janet Jackson"
+      ],
+      "resposta_correta": "Madonna",
+      "dificuldade": "difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 285,
+      "pergunta": "Em que ano foi lançado o clássico filme de ficção científica 'Blade Runner'?",
+      "opcoes": [
+        "1977",
+        "1982",
+        "1990",
+        "1999"
+      ],
+      "resposta_correta": "1982",
+      "dificuldade": "muito difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 286,
+      "pergunta": "Qual filme de 2019 ganhou o Oscar de Melhor Filme?",
+      "opcoes": [
+        "Parasita",
+        "1917",
+        "Era uma vez em... Hollywood",
+        "Coringa"
+      ],
+      "resposta_correta": "Parasita",
+      "dificuldade": "muito difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 287,
+      "pergunta": "Quem é conhecido como o 'Rei do Pop'?",
+      "opcoes": [
+        "Prince",
+        "Michael Jackson",
+        "Elvis Presley",
+        "David Bowie"
+      ],
+      "resposta_correta": "Michael Jackson",
+      "dificuldade": "muito difícil",
+      "categoria": "Entretenimento"
+    },
+    {
+      "id": 288,
+      "pergunta": "Qual é o nome do famoso prêmio de música fundado por Clive Davis e atribuído anualmente nos Estados Unidos?",
+      "opcoes": [
+        "MTV Music Awards",
+        "Grammy Awards",
+        "Billboard Music Awards",
+        "American Music Awards"
+      ],
+      "resposta_correta": "Grammy Awards",
+      "dificuldade": "muito difícil",
+      "categoria": "Entretenimento"
+    }
+  ]
+}
